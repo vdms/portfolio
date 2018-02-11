@@ -1,4 +1,4 @@
-![QuickLessons | A plataforma colaborativa de e-Learning para criar cursos online][cover]
+![QuickLessons | Plataforma colaborativa para criar cursos online][cover]
 # QuickLessons
 
 > UX, UI, arquitetura da informação, HTML, CSS(SCSS), entrevista com usuários
@@ -56,8 +56,32 @@ Iniciei a pesquisa buscando informações dos nossos concorrentes e montei uma p
 * Se possuía conversão para PPT;
 * E uma imagem com uma tela do produto exemplificando a interface.
 
-Essa pesquisa resultou em uma apresentação para a equipe onde elucidei os pontos positivos e negativos do QuickLessons.
+Essa pesquisa resultou em uma apresentação para a equipe onde relembrei/mostrei os pontos positivos e negativos do QuickLessons.
 
+Levantei pontos positivos da interface do QuickLessons e de seus concorrentes. Também busquei outros tipos de edição de tela, fora no contexto "curso online", onde encontrei ótimas referências de edição de sites, apresentações etc.
+
+![Slides.com foi uma das referências para o novo QuickLessons][slides]
+
+## Execução
+
+Para a nova interface, o QuickLessons precisava de uma palhete de cores renovada e decidi por um par de tipografias mais contemporânea que a antiga Verdana: [Montserrat](https://fonts.google.com/specimen/Montserrat) para títulos e [Hind](https://fonts.google.com/specimen/Hind) para o corpo de texto.
+
+Como o volume de coisas a fazer era grande e o tempo escasso, escolhi a biblioteca Material Design Icons como fonte de ícones para o produto.
+
+!!! Inserir palheta de cores
+
+!!! Inserir specimen de tipografia
+
+!!! Inserir wireframes
+
+## Final
+
+Uma versão de edição de cena foi lançada para público meses depois, quando foi testada e aprovada. O retorno dos clientes com a nova abordagem foi fantástica.
+
+!!! Inserir video
+
+!!! Inserir prints
 
 
 [cover]: https://media.licdn.com/media/p/7/000/1b9/18d/0345d3f.png
+[slides]:

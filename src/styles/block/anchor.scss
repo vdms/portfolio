@@ -1,0 +1,34 @@
+.anchor {
+    padding-bottom: .25em;
+    position: relative;
+
+    &::after {
+        background-color: currentColor;
+        content: '';
+        height: .075rem;
+        opacity: 0;
+        position: absolute;
+        right: 100%;
+        top: 100%;
+        transform: translateY(.15em);
+        transition: 300ms;
+        visibility: hidden;
+        width: 1em;
+        z-index: 1;
+    }
+
+    &:hover {
+
+        &:not([class*='active']) {
+
+            &::after {
+                opacity: 1;
+                transform: translateY(0);
+                visibility: visible;
+            }
+
+        }
+
+    }
+
+}

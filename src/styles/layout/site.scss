@@ -1,0 +1,49 @@
+$color--active: hsl(180, 100%, 45%);
+
+.site {
+    &__title {
+        display: block;
+        font-size: 1.2rem;
+        font-weight: 900;
+        letter-spacing: .075em;
+        margin-top: 4rem;
+        position: relative;
+        text-transform: uppercase;
+        word-spacing: .2em;
+
+        &::after {
+            background-color: currentColor;
+            content: '';
+            height: .1em;
+            position: absolute;
+            right: 100%;
+            top: 100%;
+            width: 3em;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 8rem;
+        margin-top: 1rem;
+
+        > * {
+            margin-right: 2rem;
+        }
+
+    }
+
+    &__link {
+        display: inline-block;
+        font-size: 1rem;
+        line-height: 1;
+        min-width: 5em;
+
+        &--active {
+            font-weight: 700;
+        }
+
+    }
+
+}

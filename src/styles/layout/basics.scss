@@ -1,0 +1,41 @@
+$font-family--default: 'Metropolis', Times, Helvetica, Arial, sans-serif;
+$body-bg-color: #f3f3f3;
+$body-text-color: #2f2f2f;
+
+
+html,
+body {
+    font-size: 18px;
+    height: 100%;
+}
+
+body {
+    // sass-lint:disable-all
+    -moz-osx-font-smoothing: grayscale;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    // sass-lint:enable-all
+    background-color: $body-bg-color;
+    color: $body-text-color;
+    font-family: $font-family--default;
+    line-height: 1.5;
+    padding-left: 2rem;
+}
+
+main {
+    max-width: 35em;
+}
+
+p {
+    margin-bottom: 1.5em;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}

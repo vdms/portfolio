@@ -1,7 +1,7 @@
 ![QuickLessons | Plataforma colaborativa para criar cursos online][cover]
 # QuickLessons
 
-> UX, UI, arquitetura da informação, HTML, CSS(SCSS), entrevista com usuários
+> Responsável por: UX, UI, arquitetura da informação, HTML, CSS(SCSS), entrevista com usuários
 
 ## Intro
 QuickLessons é um tradicional programa de construção de cursos online. Dentre seus recursos posso listar:

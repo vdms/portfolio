@@ -1,7 +1,27 @@
 .list {
 
-    > li:not(:first-child) {
-        margin-top: 1em;
+    > li {
+
+        &:not(:first-child) {
+            margin-top: 1em;
+        }
+
+    }
+
+    &--inline {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+
+        > li {
+
+            &:not(:first-child) {
+                margin-left: 1.5em;
+                margin-top: 0;
+            }
+
+        }
+
     }
 
 }

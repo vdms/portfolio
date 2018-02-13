@@ -1,25 +1,14 @@
-$color--active: hsl(180, 100%, 45%);
-
 .site {
     &__title {
+        @include line;
+
         display: block;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 900;
         letter-spacing: .075em;
         margin-top: 4rem;
-        position: relative;
         text-transform: uppercase;
         word-spacing: .2em;
-
-        &::after {
-            background-color: currentColor;
-            content: '';
-            height: .1em;
-            position: absolute;
-            right: 100%;
-            top: 100%;
-            width: 3em;
-        }
     }
 
     &__nav {
@@ -35,6 +24,8 @@ $color--active: hsl(180, 100%, 45%);
     }
 
     &__link {
+        @include line-on-hover;
+
         display: inline-block;
         font-size: 1rem;
         line-height: 1;
@@ -42,8 +33,13 @@ $color--active: hsl(180, 100%, 45%);
 
         &--active {
             font-weight: 700;
+            pointer-events: none;
         }
 
+    }
+
+    &__contact {
+        @include line(top);
     }
 
 }

@@ -10,110 +10,218 @@
 </head>
 
 <body>
-    <a class="site__title" href="index.html">Vicente Sarmento</a>
+    <header>
+        <a class="site__title" href="index.html">Vicente Sarmento</a>
 
-    <nav>
-        <ul class="site__nav">
-            <!-- <li><a href="">perfil</a></li> -->
-            <li><a class="site__link site__link--active" href="projects.html">projetos</a></li>
-            <li><a class="site__link" href="contact.html">contato</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <ul class="site__nav">
+                <li><a href="index.html">home</a></li>
+                <li><a class="site__link site__link--active" href="projects.html">projetos</a></li>
+                <!-- <li><a class="site__link" href="contact.html">contato</a></li> -->
+            </ul>
+        </nav>
+    </header>
 
     <main>
         <section class="intro">
             <h1 class="page__title">Projetos</h1>
-            <div class="page__intro">
-                <p>Alguns dos projetos em que trabalhei nos últimos anos.</p>
-            </div>
         </section>
 
-        <article>
-            <p>
-                <img src="https://media.licdn.com/media/p/7/000/1b9/18d/0345d3f.png" alt="QuickLessons | Plataforma colaborativa para criar cursos online">
-            </p>
-            <h3>QuickLessons</h3>
-            <blockquote>
-                <p>UX, UI, arquitetura da informação, HTML, CSS(SCSS), entrevista com usuários</p>
+        <article class="project">
+
+            <nav class="project__nav">
+                <ul>
+                    <li>
+                        <a class="project__link project__link--active" href="#intro">Intro</a>
+                    </li>
+                    <li>
+                        <a class="project__link" href="#premiss">Premissa</a>
+                    </li>
+                    <li>
+                        <a class="project__link" href="#research">Pesquisa</a>
+                    </li>
+                    <li>
+                        <a class="project__link" href="#execution">Execução</a>
+                    </li>
+                    <li>
+                        <a class="project__link" href="#final">Final</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <header class="project__header">
+                <!-- <img class="project__cover" src="../images/quicklessons__brand.png" alt="QuickLessons | Plataforma colaborativa para criar cursos online"> -->
+                <h3>QuickLessons</h3>
+            </header>
+
+            <blockquote class="project__responsible">
+                UX, UI, arquitetura da informação, HTML, CSS(SCSS), entrevista com usuários
             </blockquote>
 
-            <h4 id="intro">Intro</h4>
-            <p>QuickLessons é um tradicional programa de construção de cursos online. Dentre seus recursos posso listar:</p>
-            <ul>
-                <li>100% online. Não há necessidade de instalar nada para poder acessá-lo.</li>
-                <li>Possui recursos animados e de interação, sem necessidade de programação.</li>
-                <li>Grande biblioteca de
-                    <em>templates</em> e
-                    <em>assets</em> disponíveis.</li>
-                <li>Converte PowerPoint em Flash, já em formato SCORM pronto para subir para um LMS.</li>
-                <li>Ferramenta de avaliação e revisão nativas.</li>
-            </ul>
-            <p>Durante meu período de trabalho no QuickLessons, devenvolvi:</p>
-            <ul>
-                <li>UX Drops: pequenas melhorias para aprimorar a experiência do usuário;</li>
-                <li>Apresentações para toda a equipe sobre design centrado no usuário;</li>
-                <li>Uma série de documentos que deram suporte para essa ênfase no usuário, como:
-                    <ul>
-                        <li>fichas com personas;</li>
-                        <li>questionários;</li>
-                        <li>roteiro para entrevistas.</li>
-                    </ul>
-                </li>
-                <li>Pesquisas contextuais também.</li>
-            </ul>
-            <p>No entanto, mesmo com as diversas outras melhorias e recursos que criei para o QuickLessons, meu grande desafio foi redesenhar o produto, junto com os três desenvolvedores do produto. E é sobre esse desafio que escrevo abaixo.</p>
+            <section id="intro">
+                <h4 class="project__step">Intro</h4>
+                <p>QuickLessons é um tradicional programa de construção de cursos online. Dentre seus recursos posso listar:</p>
+                <ul>
+                    <li>100% online. Não há necessidade de instalar nada para poder acessá-lo.</li>
+                    <li>Possui recursos animados e de interação, sem necessidade de programação.</li>
+                    <li>Grande biblioteca de
+                        <em>templates</em> e
+                        <em>assets</em> disponíveis.</li>
+                    <li>Converte PowerPoint em Flash, já em formato SCORM pronto para subir para um LMS.</li>
+                    <li>Ferramenta de avaliação e revisão nativas.</li>
+                </ul>
+                <p>Durante meu período de trabalho no QuickLessons, devenvolvi:</p>
+                <ul>
+                    <li>UX Drops: pequenas melhorias para aprimorar a experiência do usuário;</li>
+                    <li>Apresentações para toda a equipe sobre design centrado no usuário;</li>
+                    <li>Uma série de documentos que deram suporte para essa ênfase no usuário, como:
+                        <ul>
+                            <li>fichas com personas;</li>
+                            <li>questionários;</li>
+                            <li>roteiro para entrevistas.</li>
+                        </ul>
+                    </li>
+                    <li>Pesquisas contextuais também.</li>
+                </ul>
+                <p>No entanto, mesmo com as diversas outras melhorias e recursos que criei para o QuickLessons, meu grande desafio foi redesenhar o produto, junto com os três desenvolvedores do produto. E é sobre esse desafio que escrevo abaixo.</p>
+            </section>
 
-            <h4 id="premissa">Premissa</h4>
-            <p>A partir de
-                <em>feedback</em> de usuários recolhidos pelo suporte e pesquisa com nossos clientes, definimos algumas premissas do projeto:
-            </p>
-            <ul>
-                <li>Trabalharíamos somente a
-                    <strong>biblioteca HTML</strong>, uma vez que identificamos que o foco de nossos clientes estavam em cursos para dispositivos móveis e design responsivo. Outras bibliotecas receberiam apenas manutenção e suporte.</li>
-                <li>Utilizaríamos tecnologias mais recentes para melhorar substancialmente a performance do produto e as interações possíveis além de acelerar a codificação do produto.</li>
-                <li>A primeira área a ser trabalhada seria a
-                    <strong>edição de cena</strong>. As áreas de edição do curso e edição da cena seriam trabalhadas em outro momento.</li>
-                <li>A interface do QL deveria ficar mais leve e simples, com um ar contemporâneo.</li>
-                <li>A edição de cena deveria ser algo divertido de se fazer. Deve haver um empoderamento do usuário sobre os elementos que aparecem na cena, sem pecar pelo excesso de opções e
-                    <em>blank state</em> dos concorrentes.</li>
-            </ul>
-            <h4 id="pesquisa">Pesquisa</h4>
-            <p>Iniciei a pesquisa buscando informações dos nossos concorrentes e montei uma planilha com:</p>
-            <ul>
-                <li>Nome da ferramenta;</li>
-                <li>Site;</li>
-                <li>Promessa do produto;</li>
-                <li>Se o produto era:
-                    <ul>
-                        <li>online;</li>
-                        <li>responsivo;</li>
-                        <li>de livre criação ou usava templates.</li>
-                    </ul>
-                </li>
-                <li>Preço;</li>
-                <li>Se possuía conversão para PPT;</li>
-                <li>E uma imagem com uma tela do produto exemplificando a interface.</li>
-            </ul>
-            <p>Essa pesquisa resultou em uma apresentação para a equipe onde relembrei/mostrei os pontos positivos e negativos do QuickLessons.
-            </p>
-            <p>Levantei pontos positivos da interface do QuickLessons e de seus concorrentes. Também busquei outros tipos de edição de tela, fora no contexto “curso online”, onde encontrei ótimas referências de edição de sites, apresentações etc.</p>
-            <p>![Slides.com foi uma das referências para o novo QuickLessons][slides]</p>
-            <h4 id="execu-o">Execução</h4>
-            <p>Para a nova interface, o QuickLessons precisava de uma palhete de cores renovada e decidi por um par de tipografias mais contemporânea que a antiga Verdana:
-                <a href="https://fonts.google.com/specimen/Montserrat">Montserrat</a> para títulos e
-                <a href="https://fonts.google.com/specimen/Hind">Hind</a> para o corpo de texto.</p>
-            <p>Como o volume de coisas a fazer era grande e o tempo escasso, escolhi a biblioteca Material Design Icons como fonte de ícones para o produto.</p>
-            <p>!!! Inserir palheta de cores</p>
-            <p>!!! Inserir specimen de tipografia</p>
-            <p>!!! Inserir wireframes</p>
-            <h4 id="final">Final</h4>
-            <p>Uma versão de edição de cena foi lançada para público meses depois, quando foi testada e aprovada. O retorno dos clientes com a nova abordagem foi fantástica.</p>
-            <p>!!! Inserir video</p>
-            <p>!!! Inserir prints</p>
-            <p>[slides]:</p>
+            <section id="premiss">
+                <h4 class="project__step">Premissa</h4>
+                <p>A partir de
+                    <em>feedback</em> de usuários recolhidos pelo suporte e pesquisa com nossos clientes, definimos algumas premissas do projeto:
+                </p>
+                <ul>
+                    <li>Trabalharíamos somente a
+                        <strong>biblioteca HTML</strong>, uma vez que identificamos que o foco de nossos clientes estavam em cursos para dispositivos móveis e design responsivo. Outras bibliotecas receberiam apenas manutenção e suporte.</li>
+                    <li>Utilizaríamos tecnologias mais recentes para melhorar substancialmente a performance do produto e as interações possíveis além de acelerar a codificação do produto.</li>
+                    <li>A primeira área a ser trabalhada seria a
+                        <strong>edição de cena</strong>. As áreas de edição do curso e edição da cena seriam trabalhadas em outro momento.</li>
+                    <li>A interface do QL deveria ficar mais leve e simples, com um ar contemporâneo.</li>
+                    <li>A edição de cena deveria ser algo divertido de se fazer. Deve haver um empoderamento do usuário sobre os elementos que aparecem na cena, sem pecar pelo excesso de opções e
+                        <em>blank state</em> dos concorrentes.</li>
+                </ul>
+            </section>
+
+            <section id="research">
+                <h4 class="project__step">Pesquisa</h4>
+                <p>Iniciei a pesquisa buscando informações dos nossos concorrentes e montei uma planilha com:</p>
+                <ul>
+                    <li>Nome da ferramenta;</li>
+                    <li>Site;</li>
+                    <li>Promessa do produto;</li>
+                    <li>Se o produto era:
+                        <ul>
+                            <li>online;</li>
+                            <li>responsivo;</li>
+                            <li>de livre criação ou usava templates.</li>
+                        </ul>
+                    </li>
+                    <li>Preço;</li>
+                    <li>Se possuía conversão para PPT;</li>
+                    <li>E uma imagem com uma tela do produto exemplificando a interface.</li>
+                </ul>
+                <p>Essa pesquisa resultou em uma apresentação para a equipe onde relembrei/mostrei os pontos positivos e negativos do QuickLessons.
+                </p>
+                <p>Levantei pontos positivos da interface do QuickLessons e de seus concorrentes. Também busquei outros tipos de edição de tela, fora no contexto “curso online”, onde encontrei ótimas referências de edição de sites, apresentações etc.</p>
+                <p>![Slides.com foi uma das referências para o novo QuickLessons][slides]</p>
+            </section>
+
+            <section id="execution">
+                <h4 class="project__step">Execução</h4>
+                <p>Decidi usar a biblioteca <a href="https://materialdesignicons.com/" target="_blank">Material Design Icons</a> para ícones do sistema. As linhas finas e precisas encaixaram para o visual que eu tinha em mente.</p>
+                <h5>Cores</h5>
+                <p>Como o produto já tinha um bom tempo de mercado, o azul foi mantido como cor principal, porém com menos saturação. Um forte cor contrastante para ser usada como cor ativa e diversos cinzas de apoio completam a plaheta.</p>
+                <div class="color-palette">
+                    <div class="ql-color--1"></div>
+                    <div class="ql-color--2"></div>
+                    <!-- <div class="ql-color--3"></div> -->
+                    <div class="ql-color--4"></div>
+                    <div class="ql-color--5"></div>
+                    <div class="ql-color--active"></div>
+                    <div class="ql-color--black"></div>
+                    <div class="ql-color--gray--dark--blueish"></div>
+                    <div class="ql-color--gray--dark"></div>
+                    <div class="ql-color--gray"></div>
+                    <div class="ql-color--gray--lighter"></div>
+                </div>
+                <h5>Tipografia</h5>
+                    <p>Decidi por um par de tipografias mais contemporânea que a antiga Verdana:
+                    <a href="https://fonts.google.com/specimen/Montserrat">Montserrat</a>, mais larga e usada em negrito, para títulos e
+                    <a href="https://fonts.google.com/specimen/Hind">Hind</a> para o corpo de texto.</p>
+                <figure>
+                    <img src="../images/quicklessons__fonts--montserrat.png"
+                            alt='Tela do Quicklessons.'/>
+                    <figcaption>Amostra da fonte Montserrat usada para títulos. </figcaption>
+                </figure>
+                <figure>
+                    <img src="../images/quicklessons__fonts--hind.png"
+                            alt='Tela do Quicklessons.'/>
+                    <figcaption>Amostra da fonte Hind usada para o corpo de texto. </figcaption>
+                </figure>
+                <figure>
+                    <img src="../images/quicklessons__wireframe--02.png"
+                            alt='Tela do Quicklessons.'/>
+                    <figcaption>Wireframe do Quicklessons</figcaption>
+                </figure>
+                <figure>
+                    <img src="../images/quicklessons__wireframe--03.png"
+                            alt='Tela do Quicklessons.'/>
+                    <figcaption>Wireframe do Quicklessons</figcaption>
+                </figure>
+                <figure>
+                    <img src="../images/quicklessons__wireframe--05.png"
+                            alt='Tela do Quicklessons.'/>
+                    <figcaption>Wireframe do Quicklessons</figcaption>
+                </figure>
+                <figure>
+                    <img src="../images/quicklessons__wireframe--08.png"
+                            alt='Tela do Quicklessons.'/>
+                    <figcaption>Wireframe do Quicklessons</figcaption>
+                </figure>
+            </section>
+
+            <section id="final">
+                <h4 class="project__step">Final</h4>
+                <p>Uma versão de edição de cena foi lançada para público meses depois, quando foi testada e aprovada. O retorno dos clientes sobre a nova abordagem de edição de cena foi fantástica.</p>
+                <video  class="video-player"
+                        controls
+                        controlsList="nodownload"
+                        poster="../images/quicklessons__demo-poster.jpg">
+                        <source src="../videos/quicklessons__demo.mp4" type="video/mp4">
+                        <source src="../videos/quicklessogulpns__demo.ogv" type="video/ogg" codecs="theora, vorbis">
+                        <source src="../videos/quicklessons__demo.webm" type="video/webm">
+                </video>
+                <figure>
+                    <img src="../images/quicklessons__printscreen--07.png"
+                         alt='Tela do Quicklessons.'/>
+                    <figcaption>Tela do Quicklessons</figcaption>
+                </figure>
+                <figure>
+                    <img src="../images/quicklessons__printscreen--09.png"
+                         alt='Tela do Quicklessons.'/>
+                    <figcaption>Tela do Quicklessons</figcaption>
+                </figure>
+                <figure>
+                    <img src="../images/quicklessons__printscreen--21.png"
+                         alt='Tela do Quicklessons.'/>
+                    <figcaption>Tela do Quicklessons</figcaption>
+                </figure>
+                <figure>
+                    <img src="../images/quicklessons__printscreen--25.png"
+                         alt='Tela do Quicklessons.'/>
+                    <figcaption>Tela do Quicklessons</figcaption>
+                </figure>
+                <figure>
+                    <img src="../images/quicklessons__printscreen--32.png"
+                         alt='Tela do Quicklessons.'/>
+                    <figcaption>Tela do Quicklessons</figcaption>
+                </figure>
+            </section>
         </article>
     </main>
 
 </body>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/projects.js" ></script>
 </html>

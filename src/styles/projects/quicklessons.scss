@@ -1,0 +1,28 @@
+.ql {
+    $black:                       #000;
+    $color-1:                     #13293d;
+    $color-2:                     #006494;
+    $color-3:                     #3686b5;
+    $color-4:                     #5a93b5; //rgb(90, 147, 181), hsl(202.4, 38.1, 53.1), hsb(202.4, 50.3, 71)
+    $color-5:                     #e8f1f2;
+
+    $color-active:                #e84855; //rgb(232,72,85), hsl(355.1, 77.7, 59.6), hsb(355.1, 69, 91)
+
+    $color-black:                 transparentize($black, .15);
+
+    $color-gray--dark-blueish:    #243034;
+    $color-gray--dark:            #393c45;
+    $color-gray--lighter:         #bcbec5;
+
+    &-color--1 {                    &::after { background-color: $color-1; } }
+    &-color--2 {                    &::after { background-color: $color-2; } }
+    &-color--3 {                    &::after { background-color: $color-3; } }
+    &-color--4 {                    &::after { background-color: $color-4; } }
+    &-color--5 {                    &::after { background-color: $color-5; } }
+    &-color--active {               &::after { background-color: $color-active; } }
+    &-color--black {                &::after { background-color: $color-black; } }
+    &-color--gray--dark--blueish {  &::after { background-color: $color-gray--dark-blueish; } }
+    &-color--gray--dark {           &::after { background-color: $color-gray--dark; } }
+    &-color--gray {                 &::after { background-color: $color-gray; } }
+    &-color--gray--lighter {        &::after { background-color: $color-gray--lightest; } }
+}

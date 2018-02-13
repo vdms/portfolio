@@ -1,0 +1,28 @@
+.color-palette {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+
+    > * {
+        flex: 0 0 20%;
+        padding-top: 20%;
+        position: relative;
+
+        &::after {
+            bottom: 0;
+            // border: 2px solid $color-gray--lightest;
+            border-radius: 50%;
+            box-shadow: 0 0 2px $color-gray--dark;
+            content: '';
+            left: 0;
+            margin: .5rem;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+
+}

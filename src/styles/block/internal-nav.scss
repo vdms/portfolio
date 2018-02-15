@@ -1,0 +1,20 @@
+.internal-nav {
+
+    // &__list {}
+
+    &__nav-title {
+        font-weight: 700;
+        opacity: 1;
+    }
+
+
+    &__link {
+        padding: .15em .25em .2em;
+
+        &--active {
+            @include active;
+        }
+
+    }
+
+}

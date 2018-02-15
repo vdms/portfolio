@@ -1,15 +1,23 @@
 .page {
     &__title {
-        font-size: 4rem;
+        font-size: 2rem;
         font-weight: 700;
         letter-spacing: -.05em;
         line-height: 1;
-        margin-bottom: .25em;;
+        margin-bottom: .25em;
+
+        @include media('>md') {
+            font-size: 4rem;
+        }
     }
 
     &__intro {
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 500;
         line-height: 1.25;
+
+        @include media('>md') {
+            font-size: 1.2rem;
+        }
     }
 }

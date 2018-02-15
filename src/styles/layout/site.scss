@@ -2,11 +2,11 @@
     &__title {
         @include line;
 
+        color: $color-gray--darkest;
         display: block;
         font-size: 1rem;
-        font-weight: 900;
+        font-weight: 700;
         letter-spacing: .075em;
-        margin-top: 4rem;
         text-transform: uppercase;
         word-spacing: .2em;
     }
@@ -14,11 +14,15 @@
     &__nav {
         display: flex;
         flex-direction: row;
-        margin-bottom: 8rem;
+        margin-bottom: 7rem;
         margin-top: 1rem;
 
         > * {
             margin-right: 2rem;
+        }
+
+        @include media('>md') {
+            margin-bottom: 8rem;
         }
 
     }
@@ -29,17 +33,19 @@
         display: inline-block;
         font-size: 1rem;
         line-height: 1;
-        min-width: 5em;
+        padding: .15em .25em .2em;
 
         &--active {
-            font-weight: 700;
-            pointer-events: none;
+            @include active;
+            // color: $color-gray--darkest;
         }
 
     }
 
     &__contact {
         @include line(top);
+
+        color: $color-gray--darkest;
     }
 
 }

@@ -1,12 +1,11 @@
-$font-family--default: 'Metropolis', Times, Helvetica, Arial, sans-serif;
-$body-bg-color: #f3f3f3;
-$body-text-color: #2f2f2f;
-
-
 html,
 body {
-    font-size: 20px;
+    font-size: 16px;
     height: 100%;
+
+    @include media('>md') {
+        font-size: 20px;
+    }
 }
 
 body {
@@ -19,12 +18,31 @@ body {
     background-color: $body-bg-color;
     color: $body-text-color;
     font-family: $font-family--default;
+    font-weight: 400;
     line-height: 1.5;
-    padding-left: 2rem;
+    padding: 2rem 1rem 0;
+
+    @include media('>md') {
+        padding-left: 2rem;
+        padding-right: 0;
+    }
+}
+
+.metropolis {
+    font-family: $font-family--inhanced;
+}
+
+header {
+    max-width: $container-max-width;
 }
 
 main {
-    max-width: 35em;
+    padding-bottom: 2rem;
+    position: relative;
+
+    @include media('>md') {
+        max-width: $container-max-width;
+    }
 }
 
 p {
@@ -36,18 +54,25 @@ ul {
 }
 
 a {
-    color: inherit;
+    color: $color-gray--darkest;
+    display: inline-block;
+    // opacity: .6;
     text-decoration: none;
-    transition: 300ms;
+    transform: translate3d(0, 0, 0);
+    transition: opacity 300ms;
 
-    &:hover {
+    @media (hover: hover), (hover: on-demand) {
 
-        &:not([class*='active']) {
+        &:hover {
 
-            color: $hover-color;
+            &:not([class*='active']) {
+                // color: $color-gray--darkest;
+                // opacity: 1;
+            }
         }
 
     }
+
 }
 
 img {
@@ -62,8 +87,8 @@ svg {
 
 figure {
     border: 1px solid $color-gray--lightest;
+    margin-bottom: 3rem;
     position: relative;
-    margin-bottom: 2rem;
 }
 
 figcaption {

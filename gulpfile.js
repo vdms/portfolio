@@ -10,7 +10,9 @@ const   gulp = require('gulp'),
         // cache = require('gulp-cache'),
         sassLint = require('gulp-sass-lint'),
         order = require("gulp-order"),
-        concat = require('gulp-concat');
+        concat = require('gulp-concat')
+        imageResize = require('gulp-image-resize'),
+        cleanCSS = require('gulp-clean-css');;
 
 
 
@@ -91,7 +93,7 @@ gulp.task('styles', function () {
             './src/styles/_fixed.scss',
             './src/styles/_include-media.scss',
             './src/styles/_mixins.scss',
-            './src/fonts/_fonts.scss',
+            './src/styles/_fonts.scss',
 
             // Blocks
             './src/styles/block/*.scss',
@@ -137,9 +139,41 @@ gulp.task('styles', function () {
 
 
 
+// COMPILE AND SERVE PROD CSS
+gulp.task('styles-prod', function () {
+    return gulp.src([
+            // setup
+            './src/styles/_variables.scss',
+            './src/styles/_fixed.scss',
+            './src/styles/_include-media.scss',
+            './src/styles/_mixins.scss',
+            './src/styles/_fonts.scss',
+
+            // Blocks
+            './src/styles/block/*.scss',
+
+            // Layout
+            './src/styles/layout/basics.scss',
+            './src/styles/layout/site.scss',
+            './src/styles/layout/page.scss',
+
+            // Projects
+            './src/styles/projects/quicklessons.scss',
+        ])
+        .pipe(concat('styles.scss'))
+        .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer('last 2 versions'))
+        .pipe(cleanCSS())
+        .pipe(gulp.dest('./dist/styles'))
+});
+
+
+
+
 // COMPRESS AND SERVE IMG
 gulp.task('images', function(){
     return gulp.src('./src/images/**/*.+(png|jpg|gif|svg)')
+    .pipe(imageResize({ width: 720 }))
     .pipe(imagemin())
     // .pipe(cache(imagemin()))
     .pipe(gulp.dest('dist/images'))
@@ -164,7 +198,6 @@ gulp.task('watch', ['browser-sync', 'styles'], function() {
 
 // INITIAL SETUP
 gulp.task('serve',['browser-sync', 'html', 'js', 'fonts', 'videos', 'styles', 'images', 'watch'], function() {});
-
 
 
 

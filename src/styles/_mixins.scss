@@ -1,5 +1,3 @@
-$hover-color: $color--active;
-
 @mixin line($pos: bottom) {
     $padding: .125rem;
 
@@ -63,4 +61,23 @@ $hover-color: $color--active;
 
     }
 
+}
+
+@mixin active {
+    font-weight: 700;
+    opacity: 1;
+    pointer-events: none;
+    position: relative;
+
+    &::before {
+        background-color: $color--active;
+        bottom: 0;
+        content: '';
+        display: inline-block;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
 }

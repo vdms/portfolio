@@ -9,30 +9,19 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body>
-    <header>
+<body class="site">
+    <header class="site__header">
         <a class="site__title" href="index.html">Vicente Sarmento</a>
 
         <nav>
             <ul class="site__nav">
-                <li><a class="site__link site__link--active" href="index.html">home</a></li>
-                <li><a class="site__link" href="projects.html">projetos</a></li>
+                <li><a class="site__link site__link--active" href="index.html">sobre mim</a></li>
+                <li><a class="site__link" href="portfolio.html">portfolio</a></li>
+                <li><a class="site__link" href="curriculo_vicente_sarmento.pdf" target="_blank">currículo</a></li>
                 <!-- <li><a class="site__link" href="contact.html">contato</a></li> -->
             </ul>
         </nav>
-    </header>
 
-    <main>
-        <section>
-            <h1 class="page__title">Designer de produto, UX/UI e de interação</h1>
-            <div class="page__intro">
-                <p>Além de pensar na experiência do usuário, desenvolvendo pesquisas,  fluxos, wireframes e protótipos, monto os layouts em HTML e CSS prontos para produção.</p>
-            </div>
-            <p>Há em algumas empresas uma lacuna na produção de produtos e sites.</p>
-            <p>É aquele momento em que o designer passa para o desenvolver um layout para ser montado. Você já acompanhou esse cenário?</p>
-            <p>As informações seguem via PDF, PPTs comentados e ainda podem ter algum código pronto, gerado automaticamente por algum programa, cheio de linhas de CSS desnecessárias. O desenvolvedor que se vire.</p>
-            <p>Bom, uma de minhas paixões é exatamente preencher essa lacuna.</p>
-        </section>
         <ul class="site__contact list list--inline">
             <li>
                 <a href="mailto:contato@vicentesarmento.com">
@@ -70,10 +59,30 @@
                 </a>
             </li>
         </ul>
+
+    </header>
+
+    <main class="site__main">
+        <section>
+            <h1 class="page__title">Designer de produto, UX/UI e de interação</h1>
+            <div class="page__intro">
+                <p>Além de pensar na experiência do usuário, desenvolvendo pesquisas,  fluxos, wireframes e protótipos, monto os layouts em HTML e CSS prontos para produção.</p>
+            </div>
+            <p>Designer com vasta experiência em produtos digitais para diversos segmentos: saúde, cosméticos, esportes, mineração, comunicação e educação.</p>
+            <p>Conhecimento em experiência do usuário, design de interfaces e interações. Trabalho de forma integrada com os desenvolvedores: além de projetar, monto os layouts em HTML e CSS para produção. Sou familiarizado com Javascript, Jquery e AngularJS.</p>
+        </section>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="js/font.js" ></script>
+    <script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+		ga('create', 'UA-62529761-1', 'auto');
+		ga('send', 'pageview');
+	</script>
 </body>
 </html>

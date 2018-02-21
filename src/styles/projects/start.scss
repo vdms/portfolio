@@ -1,0 +1,33 @@
+
+//https://coolors.co/114b5f-5af48d-456990-028090-e4fde1
+
+// Aux
+.start {
+    $color-1:                     #f47a00;
+    // $color-2:                     #14b7b7;
+
+    $color-black:                 hsla(hue($color-1), 60%, 3%, .9);
+
+    $color-gray:                  hsla(hue($color-1), 12%, 60%, 1) !default;
+    $color-gray--dark:            scale-color($color-gray, $lightness: -55%);
+    $color-gray--light:           scale-color($color-gray, $lightness: 55%);
+
+    $color-white:                 hsla(hue($color-1), 20%, 98%, .97) !default;
+
+    $color-info:                desaturate(#02a9f7, 30%) !default;
+    $color-error:               desaturate(#f44033, 20%) !default;
+    $color-success:             desaturate(#4aae4e, 10%) !default;
+    $color-warning:             desaturate(#fdbf06, 15%) !default;
+
+    // &-color--1 {                    &::after { background-color: $color-1; } }
+    // &-color--2 {                    &::after { background-color: $color-2; } }
+    &-color--black {                &::after { background-color: $color-black; } }
+    &-color--gray--dark {           &::after { background-color: $color-gray--dark; } }
+    &-color--gray {                 &::after { background-color: $color-gray; } }
+    &-color--gray--light {          &::after { background-color: $color-gray--light; } }
+    &-color--white {                &::after { background-color: $color-white; } }
+    &-color--info {                 &::after { background-color: $color-info; } }
+    &-color--error {                &::after { background-color: $color-error; } }
+    &-color--success {              &::after { background-color: $color-success; } }
+    &-color--warning {              &::after { background-color: $color-warning; } }
+}

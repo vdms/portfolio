@@ -12,7 +12,7 @@
         position: absolute;
         right: 100%;
         top: 100%;
-        width: 3em;
+        width: 1em;
     }
 
     @if $pos == top {
@@ -63,21 +63,30 @@
 
 }
 
-@mixin active {
+@mixin active($pos) {
     font-weight: 700;
     opacity: 1;
-    pointer-events: none;
     position: relative;
 
     &::before {
         background-color: $color--active;
         bottom: 0;
         content: '';
-        display: inline-block;
         left: 0;
         position: absolute;
         right: 0;
-        top: 0;
         z-index: -1;
+
+        @if $pos == 'bottom' {
+            height: .15rem;
+            top: calc(100% + .25rem);
+        }
+
+        @if $pos == 'left' {
+            right: 100%;
+            top: 0;
+            width: .15rem;
+        }
     }
+
 }

@@ -19,7 +19,7 @@ $(document).ready(function() {
             menu = target;
         $target = $(target);
         $('html, body').stop().animate({
-            'scrollTop': $target.offset().top + 2
+            'scrollTop': $target.offset().top
         }, 500, 'swing', function() {
             window.location.hash = target;
             $(document).on("scroll", onScroll);
@@ -27,15 +27,15 @@ $(document).ready(function() {
     });
 
     // Verifica dinamicamente o posicionamento da navegacao
-    pos = $('.j-internal-nav').offset().top - 40;
+    pos = $('.j-project').offset().top;
     num = pos; // -40 vem to top do elemento.
 
     $(window).bind('scroll', function() {
         if ($(window).scrollTop() > num) {
-            $('.j-internal-nav').addClass('project__nav--fixed');
+            $('.j-internal-nav').addClass('project__nav--is-show');
         } else {
             num = pos;
-            $('.j-internal-nav').removeClass('project__nav--fixed');
+            $('.j-internal-nav').removeClass('project__nav--is-show');
         }
     });
 

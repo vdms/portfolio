@@ -1,18 +1,55 @@
 .internal-nav {
+    align-items: center;
+    background-color: transparentize($color-white, .1);
+    border-bottom: 2px solid $color-gray--lightest;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
 
-    // &__list {}
-
-    &__nav-title {
+    &__title {
+        display: none;
         font-weight: 700;
         opacity: 1;
+
+        @include media('>md') {
+            display: block;
+            flex: 0 0 30%;
+            font-size: 2rem;
+            margin-right: 5%;
+        }
+
+    }
+
+    &__nav {
+        width: 35rem;
+
+        @include media('>md') {
+            margin-right: auto;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        font-size: .85em;
+        justify-content: space-around;
+
+        > *:not(:first-child) {
+            margin-left: 2rem;
+        }
+
+        @include media('>md') {
+            justify-content: flex-start;
+        }
+
     }
 
 
     &__link {
-        padding: .15em .25em .2em;
 
         &--active {
-            @include active;
+            @include active('bottom');
         }
 
     }

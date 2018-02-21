@@ -1,51 +1,103 @@
 .site {
+    padding: 1rem;
+
+    @include media('>md') {
+        align-items: flex-start;
+        display: flex;
+        flex-flow: row;
+        padding: 3rem 2rem;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+
+        @include media('>md') {
+            align-items: flex-start;
+            flex: 0 1 30%;
+            margin-bottom: 8rem;
+            margin-right: 5%;
+        }
+
+    }
+
+    &__main {
+        // @include container;
+
+        flex: 1;
+        margin-right: 5%;
+        max-width: $container-max-width;
+        padding-bottom: 2rem;
+        position: relative;
+    }
+
     &__title {
-        @include line;
+        // @include line;
 
         color: $color-gray--darkest;
         display: block;
-        font-size: 1rem;
+        font-size: 1.75rem;
         font-weight: 700;
-        letter-spacing: .075em;
-        text-transform: uppercase;
-        word-spacing: .2em;
+        letter-spacing: -.025em;
+        line-height: 1;
+        padding: .75rem 0 0;
+        // letter-spacing: .075em;
+        // text-transform: uppercase;
+        // word-spacing: .2em;
+
+        @include media('>md') {
+            margin-bottom: 1.75rem;
+        }
+
     }
 
     &__nav {
         display: flex;
         flex-direction: row;
-        margin-bottom: 7rem;
-        margin-top: 1rem;
 
         > * {
-            margin-right: 2rem;
+            margin-right: 1rem;
         }
 
         @include media('>md') {
-            margin-bottom: 8rem;
+            flex-direction: column;
         }
 
     }
 
     &__link {
-        @include line-on-hover;
+        // @include line-on-hover;
 
         display: inline-block;
         font-size: 1rem;
-        line-height: 1;
-        padding: .15em .25em .2em;
+        letter-spacing: .06em;
+        margin-top: 1rem;
+        padding: 0;
+        // text-transform: uppercase;
+
+        @include media('>md') {
+            font-size: 1.25rem;
+            margin-bottom: .35em;
+        }
+
 
         &--active {
-            @include active;
-            // color: $color-gray--darkest;
+            @include active('bottom');
         }
 
     }
 
     &__contact {
-        @include line(top);
+        // @include line(top);
 
         color: $color-gray--darkest;
+        margin-top: 2rem;
+
+        > * {
+            height: 1rem;
+        }
+
     }
 
 }

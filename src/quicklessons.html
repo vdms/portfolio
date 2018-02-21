@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vicente Sarmento | Portfolio | QuickLessons</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body class="site">
+    <header class="site__header">
+        <a class="site__title" href="index.html">Vicente Sarmento</a>
+
+        <nav>
+            <ul class="site__nav">
+                <li><a class="site__link" href="index.html">sobre mim</a></li>
+                <li><a class="site__link site__link--active" href="portfolio.html">portfolio</a></li>
+                <li><a class="site__link" href="curriculo_vicente_sarmento.pdf" target="_blank">currículo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="site__main">
+        <section class="project__nav internal-nav j-internal-nav">
+            <h1 class="internal-nav__title">
+                <a class="j-internal-nav__link" href="#project">QuickLessons</a>
+            </h1>
+            <nav class="internal-nav__nav">
+                <ul class="j-internal-nav__list internal-nav__list">
+                    <li>
+                        <a class="internal-nav__link internal-nav__link--active j-internal-nav__link" href="#intro">Intro</a>
+                    </li>
+                    <li>
+                        <a class="internal-nav__link j-internal-nav__link" href="#premiss">Premissa</a>
+                    </li>
+                    <!-- <li>
+                        <a class="internal-nav__link j-internal-nav__link" href="#research">Pesquisa</a>
+                    </li> -->
+                    <li>
+                        <a class="internal-nav__link j-internal-nav__link" href="#execution">Execução</a>
+                    </li>
+                    <li>
+                        <a class="internal-nav__link j-internal-nav__link" href="#final">Final</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+
+
+
+
+
+        <section class="project j-project" id="project">
+
+
+            <header>
+                <!-- <img class="project__cover" src="images/quicklessons__brand.png" alt="QuickLessons | Plataforma colaborativa para criar cursos online"> -->
+                <h1 class="page__title">QuickLessons</h1>
+                <blockquote class="project__responsible">
+                    UX, UI, arquitetura da informação, HTML, CSS(SCSS)
+                </blockquote>
+            </header>
+
+
+
+
+
+            <section id="intro">
+                <h4 class="project__step">Intro</h4>
+                <!-- <p>QuickLessons é um tradicional programa de construção de cursos online. Dentre seus recursos posso listar:</p>
+
+                <ul class="project__list">
+                    <li>100% online. Não há necessidade de instalar nada para poder acessá-lo.</li>
+                    <li>Possui recursos animados e de interação, sem necessidade de programação.</li>
+                    <li>Grande biblioteca de
+                        <em>templates</em> e
+                        <em>assets</em> disponíveis.</li>
+                    <li>Converte PowerPoint em Flash, já em formato SCORM pronto para subir para um LMS.</li>
+                    <li>Ferramenta de avaliação e revisão nativas.</li>
+                </ul> -->
+
+                <p>Durante meu período de trabalho no QuickLessons, devenvolvi:</p>
+
+                <ul class="project__list">
+                    <li>UX Drops: pequenas melhorias para aprimorar a experiência do usuário;</li>
+                    <li>Apresentações para toda a equipe sobre design centrado no usuário;</li>
+                    <li>Documentos que suportaram a ênfase no usuário, como:
+                        <ul class="project__list">
+                            <li>fichas com personas;</li>
+                            <li>questionários quali e quantitativos;</li>
+                            <li>roteiros para entrevistas.</li>
+                        </ul>
+                    </li>
+                    <li>Pesquisas contextuais.</li>
+                </ul>
+
+                <p>O maior e mais bacana desafio foi de iniciar o processo de <strong>resenho do produto</strong>.</p>
+            </section>
+
+
+
+
+
+            <section id="premiss">
+                <h4 class="project__step">Premissa</h4>
+                <p>A partir de
+                    <em>feedback</em> de usuários recolhidos pelo suporte e pesquisa com nossos clientes, definimos algumas premissas:
+                </p>
+                <ul class="project__list">
+                    <li>Trabalharíamos somente a
+                        <strong>biblioteca HTML</strong>, uma vez que identificamos que o foco de nossos clientes estavam em cursos para dispositivos móveis e design responsivo. Outras bibliotecas receberiam apenas manutenção e suporte.</li>
+                    <li>Uso de tecnologias mais recentes para melhorar a performance e as interações, além de acelerar a codificação do produto.</li>
+                    <li>A primeira área a ser trabalhada seria a
+                        <strong>edição de cena</strong>. As áreas de edição do curso e edição da cena seriam trabalhadas em outro momento.</li>
+                    <li>A interface do QL deveria ficar mais leve e simples, com um ar contemporâneo.</li>
+                    <li>A edição de cena deveria ser algo divertido de se fazer. Deve haver um empoderamento do usuário sobre os elementos que aparecem na cena, sem pecar pelo excesso de opções e <em>blank state</em> dos concorrentes.</li>
+                </ul>
+            </section>
+
+
+
+
+
+            <!-- <section id="research">
+                <h4 class="project__step">Pesquisa</h4>
+                <p>Iniciei a pesquisa buscando informações dos nossos concorrentes e montei uma planilha com:</p>
+                <ul class="project__list">
+                    <li>Nome da ferramenta;</li>
+                    <li>Site;</li>
+                    <li>Promessa do produto;</li>
+                    <li>Se o produto era:
+                        <ul class="project__list">
+                            <li>online;</li>
+                            <li>responsivo;</li>
+                            <li>de livre criação ou usava templates.</li>
+                        </ul>
+                    </li>
+                    <li>Preço;</li>
+                    <li>Se possuía conversão para PPT;</li>
+                    <li>E uma imagem com uma tela do produto exemplificando a interface.</li>
+                </ul>
+                <figure class="project__thumb">
+                    <img src="images/quicklessons__benchmarking.png"
+                         alt="Benchmarking dos concorrentes do QuickLessons."/>
+                    <figcaption>Benchmarking dos concorrentes do QuickLessons.</figcaption>
+                </figure>
+                <p>Essa pesquisa resultou em uma apresentação para a equipe onde relembrei/mostrei os pontos positivos e negativos do QuickLessons.</p>
+                <!-- <figure class="project__thumb">
+                    <img src="images/quicklessons__questionamentos--01.jpg"
+                            alt="Apresentação para a equipe com as observações após pesquisa."/>
+                    <figcaption>Benchmarking dos concorrentes do QuickLessons.</figcaption>
+                </figure>
+                <figure class="project__thumb">
+                    <img src="images/quicklessons__questionamentos--02.jpg"
+                            alt="Apresentação para a equipe com as observações após pesquisa."/>
+                    <figcaption>Benchmarking dos concorrentes do QuickLessons.</figcaption>
+                </figure>
+                <figure class="project__thumb">
+                    <img src="images/quicklessons__questionamentos--03.jpg"
+                            alt="Apresentação para a equipe com as observações após pesquisa."/>
+                    <figcaption>Benchmarking dos concorrentes do QuickLessons.</figcaption>
+                </figure>
+                <figure class="project__thumb">
+                    <img src="images/quicklessons__questionamentos--04.jpg"
+                            alt="Apresentação para a equipe com as observações após pesquisa."/>
+                    <figcaption>Benchmarking dos concorrentes do QuickLessons.</figcaption>
+                </figure>
+                <figure class="project__thumb">
+                    <img src="images/quicklessons__questionamentos--05.jpg"
+                            alt="Apresentação para a equipe com as observações após pesquisa."/>
+                    <figcaption>Benchmarking dos concorrentes do QuickLessons.</figcaption>
+                </figure>
+                <figure class="project__thumb">
+                    <img src="images/quicklessons__questionamentos--06.jpg"
+                            alt="Apresentação para a equipe com as observações após pesquisa."/>
+                    <figcaption>Benchmarking dos concorrentes do QuickLessons.</figcaption>
+                </figure>
+            </section> -->
+
+
+
+
+
+
+            <section id="execution">
+                <h4 class="project__step">Execução</h4>
+
+
+
+
+
+                <h5 class="project__substep">Cores</h5>
+                <p>Como o produto já tinha um bom tempo de mercado, o azul foi mantido como cor principal, porém com menos saturação. Um forte cor contrastante para ser usada como cor ativa e diversos cinzas de apoio completam a plaheta.</p>
+                <div class="color-palette">
+                    <div class="ql-color--1"></div>
+                    <div class="ql-color--2"></div>
+                    <!-- <div class="ql-color--3"></div> -->
+                    <div class="ql-color--4"></div>
+                    <div class="ql-color--5"></div>
+                    <div class="ql-color--active"></div>
+                    <div class="ql-color--black"></div>
+                    <div class="ql-color--gray--dark--blueish"></div>
+                    <div class="ql-color--gray--dark"></div>
+                    <div class="ql-color--gray"></div>
+                    <div class="ql-color--gray--lighter"></div>
+                </div>
+
+
+
+
+
+                <h5 class="project__substep">Tipografia</h5>
+                <p>Decidi por um par de tipografias mais atuais que a usada anteriormente:
+                    <a href="https://fonts.google.com/specimen/Montserrat">Montserrat</a> para títulos e
+                    <a href="https://fonts.google.com/specimen/Hind">Hind</a> para o corpo de texto.
+                </p>
+                <figure class="project__thumb">
+                    <img src="images/quicklessons__fonts--montserrat.png"
+                            alt="Amostra da fonte Montserrat usada para títulos."/>
+                    <figcaption>Amostra da fonte <strong>Montserrat</strong> usada para títulos.</figcaption>
+                </figure>
+                <figure class="project__thumb">
+                    <img src="images/quicklessons__fonts--hind.png"
+                            alt="Amostra da fonte Hind usada para títulos."/>
+                    <figcaption>Amostra da fonte <strong>Hind</strong> usada para o corpo de texto. </figcaption>
+                </figure>
+
+
+
+
+                <h5 class="project__substep">Wireframe</h5>
+                <figure class="project__thumb">
+                    <img src="images/quicklessons__wireframe--02.png"
+                            alt="Tela do Quicklessons."/>
+                    <figcaption>Wireframe do Quicklessons</figcaption>
+                </figure>
+                <figure class="project__thumb">
+                    <img src="images/quicklessons__wireframe--03.png"
+                            alt="Tela do Quicklessons."/>
+                    <figcaption>Wireframe do Quicklessons</figcaption>
+                </figure>
+                <figure class="project__thumb">
+                    <img src="images/quicklessons__wireframe--05.png"
+                            alt="Tela do Quicklessons."/>
+                    <figcaption>Wireframe do Quicklessons</figcaption>
+                </figure>
+                <figure class="project__thumb">
+                    <img src="images/quicklessons__wireframe--08.png"
+                            alt="Tela do Quicklessons."/>
+                    <figcaption>Wireframe do Quicklessons</figcaption>
+                </figure>
+            </section>
+
+
+
+
+
+            <section id="final">
+                <h4 class="project__step">Final</h4>
+                <p>Uma versão de edição de cena foi lançada para público meses depois, quando foi testada e aprovada. O retorno dos clientes sobre a nova abordagem de edição de cena foi fantástica.</p>
+
+
+
+
+
+                <h5 class="project__substep">Video de demonstração</h5>
+                <video  class="video-player"
+                        controls
+                        controlslist="nodownload"
+                        poster="images/quicklessons__demo-poster.jpg">
+                        <source src="videos/quicklessons__demo.mp4" type="video/mp4">
+                        <source src="videos/quicklessogulpns__demo.ogv" type="video/ogg" codecs="theora, vorbis">
+                        <source src="videos/quicklessons__demo.webm" type="video/webm">
+                </video>
+
+
+
+
+
+                <h5 class="project__substep">Mockups</h5>
+                <figure class="project__thumb">
+                    <img src="images/quicklessons__mockup--01.png"
+                            alt="Simulação do Start."/>
+                    <figcaption>Simulação do QuickLessons em iMac.</figcaption>
+                </figure>
+                <figure class="project__thumb">
+                    <img src="images/quicklessons__mockup--02.png"
+                            alt="Simulação do Start."/>
+                    <figcaption>Simulação do QuickLessons em notebook.</figcaption>
+                </figure>
+
+
+
+
+                <h5 class="project__substep">Telas em desktop, tela cheia</h5>
+                <figure class="project__thumb">
+                    <img src="images/quicklessons__printscreen--07.png"
+                         alt="Tela do Quicklessons."/>
+                    <figcaption>Tela do Quicklessons</figcaption>
+                </figure>
+                <figure class="project__thumb">
+                    <img src="images/quicklessons__printscreen--09.png"
+                         alt="Tela do Quicklessons."/>
+                    <figcaption>Tela do Quicklessons</figcaption>
+                </figure>
+                <figure class="project__thumb">
+                    <img src="images/quicklessons__printscreen--21.png"
+                         alt="Tela do Quicklessons."/>
+                    <figcaption>Tela do Quicklessons</figcaption>
+                </figure>
+                <figure class="project__thumb">
+                    <img src="images/quicklessons__printscreen--25.png"
+                         alt="Tela do Quicklessons."/>
+                    <figcaption>Tela do Quicklessons</figcaption>
+                </figure>
+                <figure class="project__thumb">
+                    <img src="images/quicklessons__printscreen--32.png"
+                         alt="Tela do Quicklessons."/>
+                    <figcaption>Tela do Quicklessons</figcaption>
+                </figure>
+            </section>
+
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/font.js" ></script>
+    <script src="js/projects.js" ></script>
+    <script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-62529761-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</body>
+</html>

@@ -94,17 +94,16 @@ gulp.task('styles', function () {
             './src/styles/_include-media.scss',
             './src/styles/_mixins.scss',
             './src/styles/_fonts.scss',
+            './src/styles/_rhythm.scss',
 
             // Blocks
-            './src/styles/block/*.scss',
+            './src/styles/block/**/*.scss',
 
             // Layout
-            './src/styles/layout/basics.scss',
-            './src/styles/layout/site.scss',
-            './src/styles/layout/page.scss',
+            './src/styles/layout/**/*.scss',
 
             // Projects
-            './src/styles/projects/quicklessons.scss',
+            './src/styles/projects/**/*.scss',
         ])
         .pipe(sassLint({
             rules: {
@@ -148,17 +147,16 @@ gulp.task('styles-prod', function () {
             './src/styles/_include-media.scss',
             './src/styles/_mixins.scss',
             './src/styles/_fonts.scss',
+            './src/styles/_rhythm.scss',
 
             // Blocks
-            './src/styles/block/*.scss',
+            './src/styles/block/**/*.scss',
 
             // Layout
-            './src/styles/layout/basics.scss',
-            './src/styles/layout/site.scss',
-            './src/styles/layout/page.scss',
+            './src/styles/layout/**/*.scss',
 
             // Projects
-            './src/styles/projects/quicklessons.scss',
+            './src/styles/projects/**/*.scss',
         ])
         .pipe(concat('styles.scss'))
         .pipe(sass().on('error', sass.logError))

@@ -26,6 +26,7 @@ body {
 
     @include media('>md') {
         font-size: 1.25rem;
+        font-size: calc(1.25rem + .25vw);
     }
 }
 

@@ -9,12 +9,14 @@
 
         @include media('>md') {
             font-size: 4rem;
+            font-size: calc(4rem + .75vw);
         }
 
     }
 
     &__intro {
         font-size: 1.5rem;
+        font-size: calc(1.5rem + .4vw);
         font-weight: 500;
         line-height: 1.25;
         margin-bottom: 1.85rem;

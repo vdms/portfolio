@@ -416,6 +416,8 @@ input::-moz-focus-inner {
       list-style: circle;
       margin-bottom: 1rem;
       padding-left: 3em; }
+      .project__list [class*='__list'] > li::before {
+        display: none; }
   .project__thumb {
     margin-top: 4rem; }
     .project__substep + .project__thumb {

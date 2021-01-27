@@ -73,6 +73,12 @@
             list-style: circle;
             margin-bottom: 1rem;
             padding-left: 3em;
+
+            > li {
+                &::before {
+                    display: none;
+                }
+            }
         }
 
     }

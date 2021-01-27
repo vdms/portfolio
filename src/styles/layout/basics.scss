@@ -5,7 +5,9 @@
 }
 
 html {
+    background-color: $color-white;
     font-size: 16px;
+    height: 100%;
 }
 
 body {
@@ -22,8 +24,9 @@ body {
     font-size: 1rem;
     font-variant-ligatures: common-ligatures;
     font-weight: 400;
-    height: 100%;
     line-height: 1.25;
+    min-height: 100%;
+    min-height: -webkit-fill-available;
     text-rendering: optimizeLegibility;
 
     @include media('>md') {
@@ -80,10 +83,11 @@ figure {
 }
 
 figcaption {
-    font-size: .8em;
+    font-size: .7em;
     font-style: italic;
     position: absolute;
-    top: calc(100% + .25em);
+    text-align: center;
+    top: calc(100% + .5em);
     width: 100%;
 }
 
@@ -97,4 +101,8 @@ video + {
         margin-top: 2rem;
     }
 
+}
+
+strong {
+    font-weight: bolder;
 }

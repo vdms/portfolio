@@ -3,18 +3,20 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: .25rem;
     justify-content: flex-start;
     margin: 2rem 0;
 
     > * {
-        flex: 0 0 20%;
-        padding-top: 20%;
+        $size: 4rem;
+
+        flex: 0 0 $size;
+        padding-top: $size;
         position: relative;
 
         &::after {
             bottom: 0;
-            // border: 2px solid $color-gray--lightest;
-            border-radius: 50%;
+            // border-radius: 50%;
             box-shadow: 0 0 2px $color-gray--dark;
             content: '';
             left: 0;

@@ -3,11 +3,11 @@ const   gulp = require('gulp'),
         browserSync = require('browser-sync').create(),
         cleanCSS = require('gulp-clean-css'), // minify
         concat = require('gulp-concat'),
-        // ext_replace = require('gulp-ext-replace'),
+        gm = require('gulp-gm'),
         htmlmin = require('gulp-html-minifier'), //
+        imageResize = require('gulp-image-resize'),
         imagemin = require('gulp-imagemin'), // redução no tamanho das imagens
         imageminMozjpeg = require('imagemin-mozjpeg'), //
-        // markdown = require('gulp-markdown'),
         purgecss = require('gulp-purgecss'), // remove unused
         sass = require('gulp-sass'),
         sassLint = require('gulp-sass-lint'),
@@ -18,59 +18,53 @@ const   gulp = require('gulp'),
 // transport html
 function html() {
     return gulp.src('./src/*.html')
-    .pipe(gulp.dest('./dist'))
+    .pipe(gulp.dest('./dist'));
 }
 
 // transport htmlProd
 function htmlProd() {
     return gulp.src('./src/*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest('./dist'))
+    .pipe(gulp.dest('./dist'));
 }
 
 // transport images
 function images() {
     return gulp.src('./src/images/**/*.+(png|jpg|gif|svg|ico|xml|txt|json)')
-    .pipe(imagemin([
-        // imagemin.jpegtran({progressive: true}),
-            imageminMozjpeg({ quality: 80 }),
-            imagemin.optipng({optimizationLevel: 5}),
-            imagemin.svgo({
-                plugins: [
-                    {removeViewBox: true},
-                    {cleanupIDs: false}
-            ]})
-    ]))
-    .pipe(gulp.dest('./dist/images/'))
+    .pipe(imageResize({
+        width : 864,
+        upscale : false
+    }))
+    // .pipe(imagemin([
+    //     // imagemin.jpegtran({progressive: true}),
+    //         imageminMozjpeg({ quality: 80 }),
+    //         imagemin.optipng({optimizationLevel: 5}),
+    //         imagemin.svgo({
+    //             plugins: [
+    //                 {removeViewBox: true},
+    //                 {cleanupIDs: false}
+    //         ]})
+    // ]))
+    .pipe(gulp.dest('./dist/images/'));
 }
-
-// markdown compiler
-// function md() {
-//     gulp.src('./src/cases/*.md')
-//     .pipe(markdown({
-//         smartypants: true
-//     }))
-//     .pipe(ext_replace('.html'))
-//     .pipe(gulp.dest('./src/cases'))
-// }
 
 // transport js
 function js() {
     return gulp.src('./src/js/**/*.js')
     .pipe(uglify())
-    .pipe(gulp.dest('./dist/js/'))
+    .pipe(gulp.dest('./dist/js/'));
 }
 
 // transport videos
 function videos() {
     return gulp.src('./src/videos/**/*.*')
-    .pipe(gulp.dest('./dist/videos'))
+    .pipe(gulp.dest('./dist/videos'));
 }
 
 // transport fonts
 function fonts() {
     return gulp.src('./src/fonts/**/*.*')
-    .pipe(gulp.dest('./dist/styles/fonts/'))
+    .pipe(gulp.dest('./dist/styles/fonts/'));
 }
 
 // compile scss into css
@@ -223,7 +217,7 @@ function styleProd() {
     }))
 
     // 8. where do I save the compiled css
-    .pipe(gulp.dest('./dist/styles/'))
+    .pipe(gulp.dest('./dist/styles/'));
 }
 
 // watch to recompile and retransport files

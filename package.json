@@ -15,8 +15,11 @@
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.2.0",
+    "gulp-gm": "0.0.9",
     "gulp-html-minifier": "^0.1.8",
+    "gulp-image-resize": "^0.13.1",
     "gulp-imagemin": "^6.2.0",
+    "gulp-newer": "^1.4.0",
     "gulp-purgecss": "^1.2.0",
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2"

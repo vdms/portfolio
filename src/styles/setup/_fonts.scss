@@ -56,9 +56,9 @@
 //     src: url('../styles/fonts/metropolis-extrabold-webfont.woff2') format('woff2'), url('../styles/fonts/metropolis-extrabold-webfont.woff') format('woff');
 // }
 
-// @font-face {
-//     font-family: 'Metropolis';
-//     font-style: normal;
-//     font-weight: 900;
-//     src: url('../styles/fonts/metropolis-black-webfont.woff2') format('woff2'), url('../styles/fonts/metropolis-black-webfont.woff') format('woff');
-// }
+@font-face {
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../styles/fonts/metropolis-black-webfont.woff2') format('woff2'), url('../styles/fonts/metropolis-black-webfont.woff') format('woff');
+}

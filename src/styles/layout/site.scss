@@ -1,33 +1,79 @@
 .site {
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: .5rem;
+
+    @include media('>lg') {
+        margin: 2rem;
+        padding: 2rem;
+    }
 
     &__header {
-        align-items: baseline;
+        align-items: flex-start;
         display: flex;
+        flex-shrink: 0;
         flex-direction: row;
-        margin-bottom: 3rem;
-        padding-top: 1rem;
+        flex-wrap: wrap;
+        margin: 0 auto 4rem;
+        max-width: $container-max-width;
+        position: relative;
+        width: 100%;
 
-        // @include media('>md') { }
+        @include media('>lg') {
+            align-items: baseline;
+        }
 
         > * {
-            margin-right: 2rem;
+            &:first-child {
+                margin-bottom: 1.5rem;
+                margin-right: auto;
+                width: 100%;
+
+                @include media('>lg') {
+                    margin-bottom: 0;
+                    width: unset;
+                }
+            }
+
+            &:not(:first-child) {
+                margin-top: .25rem;
+
+                @include media('>lg') {
+                    margin-right: 2rem;
+                    width: auto;
+                }
+            }
+
+            &:last-child {
+                margin-left: auto;
+
+                @include media('>lg') {
+                    margin-left: unset;
+                }
+            }
         }
 
     }
 
     &__main {
-        flex: 1;
+        margin-left: auto;
+        margin-right: auto;
         max-width: $container-max-width;
+        width: 100%;
     }
 
     &__title {
         color: $color-gray--darkest;
         display: block;
-        font-size: 1.75rem;
+        font-size: 1.25rem;
         font-weight: 700;
         letter-spacing: -.025em;
-        margin-bottom: .5rem;
+        line-height: 1;
+
+        @include media('>lg') {
+            margin-bottom: .5rem;
+        }
     }
 
     &__nav {
@@ -48,7 +94,7 @@
         padding: 0;
 
         //sass-lint:disable mixins-before-declarations
-        @include media('>md') {
+        @include media('>lg') {
             font-size: 1.25rem;
         }
         //sass-lint:enable mixins-before-declarations
@@ -67,7 +113,16 @@
 
     &__contact {
         color: $color-gray;
+        position: absolute;
+        right: 0;
+        top: 0;
         transform: translateY(3px);
+
+        @include media('>lg') {
+            position: relative;
+            right: unset;
+            top: unset;
+        }
 
         a {
             opacity: .5;

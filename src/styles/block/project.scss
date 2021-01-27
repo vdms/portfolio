@@ -18,15 +18,26 @@
     }
 
     &__step {
-        font-size: 1.5rem;
-        font-weight: 700;
+        font-size: 1.75rem;
+        font-weight: 900;
         letter-spacing: .075em;
         margin-bottom: 1em;
         padding-top: 6rem;
+        position: relative;
         text-transform: uppercase;
 
+        &::after {
+            background-color: $color--active;
+            content: '';
+            height: .25rem;
+            left: 0;
+            position: absolute;
+            top: calc(100% + .25rem);
+            width: 2rem;
+        }
+
         + [class*='substep'] {
-            margin-top: 2rem;
+            margin-top: 4rem;
         }
     }
 
@@ -38,13 +49,23 @@
 
     &__list {
         font-size: .85em;
-        list-style: initial;
+        list-style: none;
         margin-bottom: 1rem;
+        margin-left: -1rem;
         margin-top: 1rem;
         padding-left: 1rem;
 
         > li {
             margin-top: .5em;
+
+            &::before {
+                color: $color--active;
+                content: '_';
+                display: inline-block;
+                margin-left: -1em;
+                width: 1em;
+            }
+
         }
 
         & [class*='__list'] {
@@ -59,6 +80,10 @@
     &__thumb {
 
         margin-top: 4rem;
+
+        .project__substep + & {
+            margin-top: .5rem;
+        }
 
         &--sm {
             @include media('>md') {
@@ -100,14 +125,12 @@
 
     [class*='--larger'] {
         $width: 70vw;
-        $placement-correction: (100vw - $width)/2;
-        
-        box-shadow: 0 0 24px transparentize($color: $color--black, $amount: .95),
-                    0 4px 12px transparentize($color: $color--black, $amount: .8);
-        // left: -50%;
+        $placement-correction: (100vw - $width) / 2;
+
+        box-shadow: 0 0 32px transparentize($color: $color--black, $amount: .95), 0 8px 24px transparentize($color: $color--black, $amount: .925);
+        max-width: 100%;
         position: relative;
-        // transform: translateX(#{$placement-correction});
         width: $width;
     }
-    
+
 }

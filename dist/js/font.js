@@ -1,5 +1,1 @@
-$(function(){
-    $('body').addClass('metropolis');
-    // $(document).ready(function() {
-    // })
-});
+$(function(){$("body").addClass("metropolis")});

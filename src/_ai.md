@@ -1,6 +1,6 @@
 # Portfolio
 
-* Sobre mim
+* about me
     * Texto introdutório
     * Links para:
         * E-mail

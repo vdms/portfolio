@@ -1,27 +1,33 @@
 .internal-nav {
-    align-items: center;
-    background-color: transparentize($color-white, .1);
-    border-bottom: 2px solid $color-gray--lightest;
+    align-items: baseline;
+    background-color: transparentize($color-black, .1);
+    color: $color-white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 1rem 2rem;
+    
+    a {
+        color: inherit;
+    }
 
     &__title {
         display: none;
         font-weight: 700;
         opacity: 1;
+        line-height: 1;
 
         @include media('>md') {
             display: block;
-            flex: 0 0 30%;
+            flex: 0 0 auto;
             font-size: 2rem;
-            margin-right: 5%;
+            margin-right: 2rem;
         }
 
     }
 
     &__nav {
+        opacity: .85;
         width: 35rem;
 
         @include media('>md') {
@@ -47,6 +53,11 @@
 
 
     &__link {
+        font-size: 1rem;
+        
+        @include media('>md') {
+            font-size: 1.25rem;
+        }
 
         &--active {
             @include active('bottom');

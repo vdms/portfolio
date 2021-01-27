@@ -20,13 +20,15 @@ body {
     color: $body-text-color;
     font-family: $font-family--default;
     font-size: 1rem;
+    font-variant-ligatures: common-ligatures;
     font-weight: 400;
     height: 100%;
     line-height: 1.25;
+    text-rendering: optimizeLegibility;
 
     @include media('>md') {
         font-size: 1.25rem;
-        font-size: calc(1.25rem + .25vw);
+        font-size: calc(1rem + .3vw);
     }
 }
 
@@ -35,7 +37,7 @@ body {
 }
 
 p + p {
-    margin-top: 1rem;
+    margin-top: 1em;
 }
 
 ul {

@@ -78,8 +78,8 @@
         z-index: -1;
 
         @if $pos == 'bottom' {
-            height: .15rem;
-            top: calc(100% + .25rem);
+            height: .2rem;
+            top: calc(100% + .4rem);
         }
 
         @if $pos == 'left' {

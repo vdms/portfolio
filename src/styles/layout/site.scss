@@ -1,104 +1,81 @@
 .site {
     padding: 1rem;
 
-    @include media('>md') {
-        align-items: flex-start;
-        display: flex;
-        flex-flow: row;
-        padding: 3rem 2rem;
-    }
-
     &__header {
+        align-items: baseline;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         margin-bottom: 3rem;
+        padding-top: 1rem;
 
-        @include media('>md') {
-            align-items: flex-start;
-            flex: 0 1 30%;
-            margin-bottom: 8rem;
-            margin-right: 5%;
-            max-width: 16rem;
+        // @include media('>md') { }
+
+        > * {
+            margin-right: 2rem;
         }
 
     }
 
     &__main {
-        // @include container;
-
         flex: 1;
-        margin-right: 5%;
         max-width: $container-max-width;
-        padding-bottom: 2rem;
-        position: relative;
     }
 
     &__title {
-        // @include line;
-
         color: $color-gray--darkest;
         display: block;
         font-size: 1.75rem;
         font-weight: 700;
         letter-spacing: -.025em;
-        line-height: 1;
-        padding: .75rem 0 0;
-        // letter-spacing: .075em;
-        // text-transform: uppercase;
-        // word-spacing: .2em;
-
-        @include media('>md') {
-            margin-bottom: 1.75rem;
-        }
-
+        margin-bottom: .5rem;
     }
 
     &__nav {
         display: flex;
         flex-direction: row;
 
-        > * {
-            margin-right: 1rem;
-        }
-
-        @include media('>md') {
-            flex-direction: column;
+        > *:not(:first-of-type) {
+            margin-left: 1rem;
         }
 
     }
 
     &__link {
-        // @include line-on-hover;
-
         display: inline-block;
         font-size: 1rem;
-        letter-spacing: .06em;
-        margin-top: 1rem;
+        letter-spacing: -.025em;
+        opacity: .5;
         padding: 0;
-        // text-transform: uppercase;
 
+        //sass-lint:disable mixins-before-declarations
         @include media('>md') {
             font-size: 1.25rem;
-            margin-bottom: .35em;
         }
+        //sass-lint:enable mixins-before-declarations
 
+        &:hover {
+            opacity: 1;
+        }
 
         &--active {
             @include active('bottom');
+
+            opacity: 1;
         }
 
     }
 
     &__contact {
-        // @include line(top);
+        color: $color-gray;
+        transform: translateY(3px);
 
-        color: $color-gray--darkest;
-        margin-top: 2rem;
+        a {
+            opacity: .5;
 
-        // > * {
-        //     height: 1rem;
-        // }
-
+            &:hover {
+                opacity: 1;
+            }
+        }
     }
 
 }

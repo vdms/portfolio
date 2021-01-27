@@ -1,7 +1,12 @@
 .internal-nav {
     background-color: transparentize($color-black, .1);
     color: $color-white;
-    padding: 1rem 2rem;
+    padding: 1rem;
+
+    @include media('>lg') {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 
     a {
         color: inherit;
@@ -12,10 +17,14 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: $container-max-width;
         width: 100%;
+
+        @include media('>lg') {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: $container-max-width;
+        }
+
     }
 
     &__title {
@@ -35,14 +44,18 @@
 
     &__nav {
         opacity: .85;
-        width: 35rem;
+        width: 100%;
+
+        @include media('>lg') {
+            width: 35rem;
+        }
     }
 
     &__list {
         display: flex;
         flex-direction: row;
         font-size: .85em;
-        justify-content: space-around;
+        justify-content: space-between;
 
         > *:not(:first-child) {
             margin-left: 2rem;

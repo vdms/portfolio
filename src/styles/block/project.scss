@@ -39,7 +39,7 @@
     &__list {
         font-size: .85em;
         list-style: initial;
-        margin-bottom: 0;
+        margin-bottom: 1rem;
         margin-top: 1rem;
         padding-left: 1rem;
 
@@ -58,11 +58,7 @@
 
     &__thumb {
 
-        // @include media('>md') {
-        //     min-height: 350px;
-        // }
-
-        margin-top: 1rem;
+        margin-top: 4rem;
 
         &--sm {
             @include media('>md') {
@@ -99,9 +95,19 @@
             transform: translateY(0);
         }
 
-        // @include media('<990px') {
-        //     display: none;
-        // }
     }
 
+
+    [class*='--larger'] {
+        $width: 70vw;
+        $placement-correction: (100vw - $width)/2;
+        
+        box-shadow: 0 0 24px transparentize($color: $color--black, $amount: .95),
+                    0 4px 12px transparentize($color: $color--black, $amount: .8);
+        // left: -50%;
+        position: relative;
+        // transform: translateX(#{$placement-correction});
+        width: $width;
+    }
+    
 }

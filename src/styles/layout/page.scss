@@ -14,12 +14,22 @@
 
     }
 
-    &__intro {
-        font-size: 1.5rem;
-        font-size: calc(1.5rem + .4vw);
-        font-weight: 500;
-        line-height: 1.25;
-        margin-bottom: 1.85rem;
+    &__subtitle {
+        margin-top: 2em;
+        margin-bottom: .5em;
     }
 
+    &__intro {
+        font-size: 1.5rem;
+        font-size: calc(1rem + .6vw);
+        font-weight: 500;
+        line-height: 1.25;
+        margin-bottom: 1em;
+    }
+
+    &__read-more {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    
 }

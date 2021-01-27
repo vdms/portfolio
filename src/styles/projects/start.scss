@@ -19,8 +19,6 @@
     $color-success:             desaturate(#4aae4e, 10%) !default;
     $color-warning:             desaturate(#fdbf06, 15%) !default;
 
-    // &-color--1 {                    &::after { background-color: $color-1; } }
-    // &-color--2 {                    &::after { background-color: $color-2; } }
     &-color--black {                &::after { background-color: $color-black; } }
     &-color--gray--dark {           &::after { background-color: $color-gray--dark; } }
     &-color--gray {                 &::after { background-color: $color-gray; } }

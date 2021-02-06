@@ -24,7 +24,7 @@ body {
     font-size: 1rem;
     font-variant-ligatures: common-ligatures;
     font-weight: 400;
-    line-height: 1.25;
+    line-height: 1.5;
     min-height: 100%;
     min-height: -webkit-fill-available;
     text-rendering: optimizeLegibility;
@@ -51,9 +51,12 @@ a {
     color: $color-gray--darkest;
     display: inline-block;
     line-height: 1rem;
-    text-decoration: none;
     transform: translate3d(0, 0, 0);
     transition: opacity 300ms;
+
+    &[class] {
+        text-decoration: none;
+    }
 
     // @media (hover: hover), (hover: on-demand) {
 
@@ -78,13 +81,14 @@ svg {
 
 figure {
     border: 1px solid $color-gray--lightest;
-    margin-bottom: 4rem;
+    // margin-bottom: 4rem;
     position: relative;
 }
 
 figcaption {
     font-size: .7em;
     font-style: italic;
+    left: 0;
     position: absolute;
     text-align: center;
     top: calc(100% + .5em);

@@ -18,18 +18,21 @@
     }
 
     &__step {
-        font-size: 1.75rem;
-        font-weight: 900;
-        letter-spacing: .075em;
+        font-size: 1.25rem;
+        font-weight: 700;
+        letter-spacing: -.025em;
         margin-bottom: 1em;
         padding-top: 6rem;
         position: relative;
-        text-transform: uppercase;
+
+        // @include media('>md') {
+        //     font-size: 1.75rem;
+        // }
 
         &::after {
             background-color: $color--active;
             content: '';
-            height: .25rem;
+            height: .15rem;
             left: 0;
             position: absolute;
             top: calc(100% + .25rem);
@@ -42,9 +45,12 @@
     }
 
     &__substep {
-        font-size: 1.25rem;
+        font-size: .85rem;
+        letter-spacing: .05em;
         margin-bottom: .5rem;
         margin-top: 4rem;
+        opacity: .8;
+        text-transform: uppercase;
     }
 
     &__list {
@@ -85,10 +91,15 @@
 
     &__thumb {
 
-        margin-top: 4rem;
+        margin-top: 3rem;
 
         .project__substep + & {
             margin-top: .5rem;
+        }
+
+        &--type {
+            background-color: $color-white-absolute;
+            padding: 4vw 4vw 2vw;
         }
 
         &--sm {

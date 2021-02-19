@@ -5,6 +5,7 @@
         letter-spacing: -.025em;
         line-height: 1;
         margin-bottom: 2rem;
+        transform: translateX(-4px);
 
         @include media('>md') {
             font-size: 3.5rem;

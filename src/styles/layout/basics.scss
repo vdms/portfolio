@@ -30,13 +30,18 @@ body {
     text-rendering: optimizeLegibility;
 
     @include media('>md') {
-        font-size: 1.25rem;
-        font-size: calc(1rem + .3vw);
+        font-size: 1.275rem;
+        font-size: calc(1.275rem + .3vw);
     }
 }
 
 .metropolis {
     font-family: $font-family--inhanced;
+
+    @include media('>md') {
+        font-size: 1.25rem;
+        font-size: calc(1rem + .3vw);
+    }
 }
 
 p + p {

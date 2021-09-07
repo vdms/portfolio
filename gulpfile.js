@@ -31,10 +31,10 @@ function htmlProd() {
 // transport images
 function images() {
     return gulp.src('./src/images/**/*.+(png|jpg|gif|svg|ico|xml|txt|json)')
-    .pipe(imageResize({
-        width : 864,
-        upscale : false
-    }))
+    // .pipe(imageResize({
+    //     width : 864,
+    //     upscale : false
+    // }))
     // .pipe(imagemin([
     //     // imagemin.jpegtran({progressive: true}),
     //         imageminMozjpeg({ quality: 80 }),

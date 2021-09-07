@@ -1,0 +1,51 @@
+---
+tags: baseNav
+layout: "base.njk"
+title: Selected Work
+eleventyNavigation:
+  key: Selected Work
+  order: 1
+---
+<ul class="portfolio__list flow-xl">
+    {% set projects = collections.projects | eleventyNavigation %}
+    {%- for project in projects %}
+        <li>
+            <a  class="flow-md portfolio__thumb portfolio__{{project.title | lower}}"
+                href="{{ project.url | url }}">
+            <span class="portfolio__label">{{ project.title }}</span>
+            <span class="portfolio__sub">{{ project.desc }}</span>
+            </a>
+        </li>
+    {%- endfor %}
+</ul>
+
+<ul class="portfolio__list flow-xl">
+    {# <li class="">
+        <a class="portfolio__thumb portfolio__quicklessons flow-md" href="../projects/quicklessons/index.html">
+            <span class="portfolio__label">QuickLessons</span>
+            <span class="portfolio__sub">This rapid online course building SaaS needed a huge update
+                from the inside out.</span>
+        </a>
+    </li>
+    <li class="">
+        <a class="portfolio__thumb portfolio__start flow-md" href="../projects/start/index.html">
+            <span class="portfolio__label">Start</span>
+            <span class="portfolio__sub">A white label lightweight LMS with a quick deploy time.</span>
+        </a>
+    </li> #}
+    <!-- <li class="portfolio__thumb portfolio__management">
+                    <a class="portfolio__label" href="management.html">
+                        <span class="portfolio__label">Management</span>
+                    </a>
+                </li> -->
+    <!-- <li class="portfolio__thumb portfolio__izzui">
+                    <a class="portfolio__label" href="izzui.html">
+                        <span class="portfolio__label">Izzui</span>
+                    </a>
+                </li> -->
+    <!-- <li class="project__jafoi">
+                    <a href="jafoi.html">
+                        <span class="portfolio__label">Já Foi</span>
+                    </a>
+                </li> -->
+</ul>

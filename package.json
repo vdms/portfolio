@@ -1,48 +1,34 @@
 {
-  "name": "portfolio",
+  "name": "portfolio-11ty",
   "version": "1.0.0",
-  "description": "Vicente Sarmento | Portfolio",
-  "main": "gulpfile.js",
-  "dependencies": {
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-sass-lint": "^1.4.0",
-    "gulp-sourcemaps": "^2.6.5",
-    "imagemin-mozjpeg": "^8.0.0"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "del": "^5.1.0",
-    "gulp": "^4.0.2",
-    "gulp-clean-css": "^4.2.0",
-    "gulp-gm": "0.0.9",
-    "gulp-html-minifier": "^0.1.8",
-    "gulp-image-resize": "^0.13.1",
-    "gulp-imagemin": "^6.2.0",
-    "gulp-newer": "^1.4.0",
-    "gulp-purgecss": "^1.2.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-uglify": "^3.0.2"
-  },
+  "description": "You can use the [editor on GitHub](https://github.com/vdms/vdms/edit/master/README.md) to maintain and preview the content for your website in Markdown files.",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch:sass": "sass --watch src/styles:dist/styles",
+    "build:sass": "sass src/styles:dist/styles",
+    "watch:eleventy": "eleventy --serve",
+    "build:eleventy": "eleventy",
+    "start": "npm-run-all build:sass --parallel watch:*",
+    "build": "npm-run-all build:*"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vdms/portfolio.git"
   },
-  "keywords": [
-    "designer",
-    "user experience",
-    "ux",
-    "ui",
-    "interaction",
-    "interface"
-  ],
-  "author": "Vicente Sarmento (designer)",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/vdms/portfolio/issues"
   },
-  "homepage": "https://github.com/vdms/portfolio#readme"
+  "homepage": "https://github.com/vdms/portfolio#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-navigation": "^0.3.2"
+  },
+  "dependencies": {
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^4.1.0",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.38.2"
+  }
 }

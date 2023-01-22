@@ -142,7 +142,7 @@
 
     [class*='--larger'] {
         $width: 70vw;
-        $placement-correction: (100vw - $width) / 2;
+        $placement-correction: calc((100vw - $width) / 2);
 
         box-shadow: 0 0 32px transparentize($color: $color--black, $amount: .95), 0 8px 24px transparentize($color: $color--black, $amount: .925);
         max-width: 100%;

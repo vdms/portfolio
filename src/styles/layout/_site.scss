@@ -2,13 +2,6 @@
     display: flex;
     flex-direction: column;
     padding: 4rem 2rem;
-    // margin: .5rem;
-    // padding: .5rem;
-
-    // @include media('>lg') {
-    //     margin: 2rem;
-    //     padding: 2rem;
-    // }
 
     &__header {
         align-items: flex-start;
@@ -37,22 +30,6 @@
                 }
             }
 
-            // &:not(:first-child) {
-            //     margin-top: .25rem;
-
-            //     @include media('>lg') {
-            //         margin-right: 2rem;
-            //         width: auto;
-            //     }
-            // }
-
-            // &:last-child {
-            //     margin-left: auto;
-
-            //     @include media('>lg') {
-            //         margin-left: unset;
-            //     }
-            // }
         }
 
     }
@@ -67,8 +44,8 @@
     &__title {
         color: $color-gray--darkest;
         display: block;
-        font-size: 1.25rem;
-        font-weight: 700;
+        font-size: 2rem;
+        font-weight: 800;
         letter-spacing: -.025em;
         line-height: 1;
 
@@ -80,6 +57,12 @@
     &__nav {
         display: flex;
         flex-direction: row;
+
+        > * {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+        }
 
         > *:not(:first-of-type) {
             margin-left: 1rem;

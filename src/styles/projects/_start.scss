@@ -14,10 +14,10 @@
 
     $color-white:                 hsla(hue($color-1), 20%, 98%, .97) !default;
 
-    $color-info:                desaturate(#02a9f7, 30%) !default;
-    $color-error:               desaturate(#f44033, 20%) !default;
-    $color-success:             desaturate(#4aae4e, 10%) !default;
-    $color-warning:             desaturate(#fdbf06, 15%) !default;
+    $color-info:                  desaturate(#02a9f7, 30%) !default;
+    $color-error:                 desaturate(#f44033, 20%) !default;
+    $color-success:               desaturate(#4aae4e, 10%) !default;
+    $color-warning:               desaturate(#fdbf06, 15%) !default;
 
     &-color--black {                &::after { background-color: $color-black; } }
     &-color--gray--dark {           &::after { background-color: $color-gray--dark; } }

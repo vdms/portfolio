@@ -2,7 +2,7 @@
 @import "setup/_fixed";
 @import "setup/_include-media";
 @import "setup/_mixins";
-@import "setup/_fonts";
+// @import "setup/_fonts";
 
 
 @import "block/_button";
@@ -17,8 +17,9 @@
 @import "layout/_basics";
 @import "layout/_grid";
 @import "layout/_page";
-@import "layout/_portfolio";
+@import "layout/_portfolio"; // to be used in the projects thumbs
 @import "layout/_site";
 
+/* To be used in the projects page */ 
 @import "projects/_quicklessons";
 @import "projects/_start";

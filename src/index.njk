@@ -1,0 +1,17 @@
+---
+title: Hello World
+layout: "base.njk"
+---
+
+<ul class="portfolio__list flow-xl">
+    {% set projects = collections.projects | eleventyNavigation %}
+    {%- for project in projects %}
+        <li>
+            <a  class="flow-md portfolio__thumb portfolio__{{project.title | lower}}"
+                href="{{ project.url | url }}">
+            <span class="portfolio__label">{{ project.title }}</span>
+            <span class="portfolio__sub">{{ project.desc }}</span>
+            </a>
+        </li>
+    {%- endfor %}
+</ul>

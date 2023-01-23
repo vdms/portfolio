@@ -42,6 +42,14 @@ $breakpoints: (
 
 
 //------------------------------------
+//    #GENERAL
+//------------------------------------
+$border-radius: 4px;
+
+
+
+
+//------------------------------------
 //    #COLORS
 //------------------------------------
 $color--active: hsl(180, 100%, 45%);
@@ -62,4 +70,4 @@ $body-text-color: $color-gray--darkest;
 $container-max-width: 70ch;
 
 $font-family--default: Helvetica, Arial, sans-serif;
-$font-family--inhanced: 'Figtree', 'Metropolis', Helvetica, Arial, sans-serif;
+$font-family--enhanced: 'Figtree', 'Metropolis', Helvetica, Arial, sans-serif;

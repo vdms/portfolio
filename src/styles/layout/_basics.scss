@@ -20,10 +20,10 @@ body {
 
     background-color: $body-bg-color;
     color: $body-text-color;
-    font-family: $font-family--default;
+    font-family: $font-family--enhanced;
     font-size: 1rem;
     font-variant-ligatures: common-ligatures;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.5;
     min-height: 100%;
     min-height: -webkit-fill-available;
@@ -31,16 +31,7 @@ body {
 
     @include media('>md') {
         font-size: 1.275rem;
-        font-size: calc(1.275rem + .3vw);
-    }
-}
-
-.font-inhanced {
-    font-family: $font-family--inhanced;
-
-    @include media('>md') {
-        font-size: 1.25rem;
-        font-size: calc(1rem + .3vw);
+        font-size: calc(1.275rem + .2vw);
     }
 }
 
@@ -75,6 +66,7 @@ a {
 }
 
 img {
+    border-radius: $border-radius;
     display: block;
     height: auto;
     width: 100%;

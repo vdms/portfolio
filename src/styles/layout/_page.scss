@@ -1,7 +1,7 @@
 .page {
     &__title {
         font-size: 3rem;
-        font-weight: 700;
+        font-weight: 800;
         letter-spacing: -.025em;
         line-height: 1;
         margin-bottom: 2rem;
@@ -9,7 +9,7 @@
 
         @include media('>md') {
             font-size: 3.5rem;
-            font-size: calc(3rem + .75vw);
+            font-size: calc(3rem + .25vw);
         }
 
     }

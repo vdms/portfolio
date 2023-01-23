@@ -2,16 +2,16 @@
     $this: &;
 
     display: grid;
-    gap: min(4vw, 2vw);
+    gap: min(4vw, 6vw);
 
     &--2 {
-        -ms-grid-columns: repeat(auto-fill, minmax(300px, 1fr));
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        -ms-grid-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 
     &--3 {
-        -ms-grid-columns: repeat(auto-fill, minmax(250px, 1fr));
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        -ms-grid-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
 }

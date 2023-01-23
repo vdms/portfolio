@@ -1,5 +1,5 @@
 ---
-tags: baseNav
+tags: notBaseNav
 layout: "base.njk"
 title: Posts
 eleventyNavigation:

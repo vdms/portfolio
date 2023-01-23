@@ -3,7 +3,10 @@
     <ul class="site__nav">
         {%- for entry in navPages %}
             <li>
-                <a class="site__link {% if entry.url == page.url %}site__link--active{% endif %}" href="{{ entry.url | url }}">{{ entry.title }}</a>
+                <a class="  site__link
+                            {% if entry.url == page.url %}site__link--active{% endif %}
+                            {% if (page.url == '/' and entry.url == '/selected-work/') %}site__link--active{% endif %}"
+                    href="{{ entry.url | url }}">{{ entry.title }}</a>
             </li>
         {%- endfor %}
     </ul>

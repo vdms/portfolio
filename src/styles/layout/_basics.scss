@@ -5,7 +5,7 @@
 }
 
 html {
-    background-color: $color-white;
+    background-color: $html-bg-color;
     font-size: 16px;
     height: 100%;
 }
@@ -20,10 +20,10 @@ body {
 
     background-color: $body-bg-color;
     color: $body-text-color;
-    font-family: $font-family--enhanced;
+    font-family: $basic-font-family;
     font-size: 1rem;
     font-variant-ligatures: common-ligatures;
-    font-weight: 300;
+    font-weight: $basic-font-weigth;
     line-height: 1.5;
     min-height: 100%;
     min-height: -webkit-fill-available;
@@ -31,7 +31,6 @@ body {
 
     @include media('>md') {
         font-size: 1.275rem;
-        font-size: calc(1.275rem + .2vw);
     }
 }
 

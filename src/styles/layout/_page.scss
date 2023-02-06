@@ -9,7 +9,7 @@
 
         @include media('>md') {
             font-size: 3.5rem;
-            font-size: calc(3rem + .25vw);
+            // font-size: calc(3rem + .25vw);
         }
 
     }
@@ -21,7 +21,7 @@
 
     &__intro {
         font-size: 1.5rem;
-        font-size: calc(1rem + .6vw);
+        // font-size: calc(1rem + .6vw);
         font-weight: 500;
         line-height: 1.25;
         margin-bottom: 1em;

@@ -1,3 +1,10 @@
+/*
+- header
+- nav
+    - link
+- main
+    - title
+*/
 .site {
     display: flex;
     flex-direction: column;
@@ -32,26 +39,6 @@
 
         }
 
-    }
-
-    &__main {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: $container-max-width;
-        width: 100%;
-    }
-
-    &__title {
-        color: $color-gray--darkest;
-        display: block;
-        font-size: 1.75rem;
-        font-weight: 800;
-        letter-spacing: -.005em;
-        line-height: 1;
-
-        @include media('>lg') {
-            margin-bottom: .5rem;
-        }
     }
 
     &__nav {
@@ -96,25 +83,23 @@
 
     }
 
-    &__contact {
-        color: $color-gray;
-        position: absolute;
-        right: 0;
-        top: 0;
-        transform: translateY(3px);
+    &__main {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: $container-max-width;
+        width: 100%;
+    }
+
+    &__title {
+        color: $color-gray--darkest;
+        display: block;
+        font-size: 1.75rem;
+        font-weight: 800;
+        letter-spacing: -.005em;
+        line-height: 1;
 
         @include media('>lg') {
-            position: relative;
-            right: unset;
-            top: unset;
-        }
-
-        a {
-            opacity: .5;
-
-            &:hover {
-                opacity: 1;
-            }
+            margin-bottom: .5rem;
         }
     }
 

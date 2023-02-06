@@ -63,11 +63,12 @@ $color-white-absolute: hsl(0, 0%, 100%);
 $color-white: hsl(0, 0%, 98%);
 $color-black: hsl(0, 0%, 2%);
 
+$html-bg-color: hsl(0, 0%, 95%);
 
-$body-bg-color: hsl(0, 0%, 95%);
+$body-bg-color: $html-bg-color;
 $body-text-color: $color-gray--darkest;
 
-$container-max-width: 70ch;
+$container-max-width: 50rem;
 
-$font-family--default: Helvetica, Arial, sans-serif;
-$font-family--enhanced: 'Figtree', 'Metropolis', Helvetica, Arial, sans-serif;
+$basic-font-family: 'Figtree', Helvetica, Arial, sans-serif;
+$basic-font-weigth: 400;

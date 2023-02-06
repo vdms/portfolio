@@ -43,8 +43,12 @@ ul {
 }
 
 a {
+    align-items: center;
     color: $color-gray--darkest;
     display: inline-block;
+    display: inline-flex;
+    flex-direction: row;
+    gap: 0.2em;
     line-height: 1rem;
     transform: translate3d(0, 0, 0);
     transition: opacity 300ms;

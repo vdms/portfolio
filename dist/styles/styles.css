@@ -207,7 +207,7 @@ input::-moz-focus-inner {
   white-space: nowrap;
 }
 .btn:hover {
-  background-color: hsl(180deg, 100%, 45%);
+  background-color: hsl(180, 100%, 45%);
 }
 
 .color-palette {
@@ -226,7 +226,7 @@ input::-moz-focus-inner {
 }
 .color-palette > *::after {
   bottom: 0;
-  box-shadow: 0 0 2px hsl(0deg, 0%, 42%);
+  box-shadow: 0 0 2px hsl(0, 0%, 42%);
   content: "";
   left: 0;
   position: absolute;
@@ -257,7 +257,7 @@ input::-moz-focus-inner {
 
 .internal-nav {
   background-color: rgba(5, 5, 5, 0.9);
-  color: hsl(0deg, 0%, 98%);
+  color: hsl(0, 0%, 98%);
   padding: 1rem;
 }
 @media (min-width: 62.1rem) {
@@ -334,7 +334,7 @@ input::-moz-focus-inner {
   position: relative;
 }
 .internal-nav__link--active::before {
-  background-color: hsl(180deg, 100%, 45%);
+  background-color: hsl(180, 100%, 45%);
   bottom: 0;
   content: "";
   left: 0;
@@ -368,7 +368,7 @@ input::-moz-focus-inner {
   width: 10rem;
 }
 .project__responsible {
-  background-color: hsl(0deg, 0%, 86%);
+  background-color: hsl(0, 0%, 86%);
   display: block;
   font-size: 0.85rem;
   margin-bottom: 1rem;
@@ -384,7 +384,7 @@ input::-moz-focus-inner {
   position: relative;
 }
 .project__step::after {
-  background-color: hsl(180deg, 100%, 45%);
+  background-color: hsl(180, 100%, 45%);
   content: "";
   height: 0.15rem;
   left: 0;
@@ -414,7 +414,7 @@ input::-moz-focus-inner {
   margin-top: 0.5em;
 }
 .project__list > li::before {
-  color: hsl(180deg, 100%, 45%);
+  color: hsl(180, 100%, 45%);
   content: "_";
   display: inline-block;
   margin-left: -1em;
@@ -434,7 +434,7 @@ input::-moz-focus-inner {
   margin-top: 3rem;
 }
 .project__thumb--type {
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: hsl(0, 0%, 100%);
   padding: 4vw 4vw 2vw;
 }
 .project__thumb--sm {
@@ -477,7 +477,7 @@ input::-moz-focus-inner {
 }
 
 html {
-  background-color: hsl(0deg, 0%, 95%);
+  background-color: hsl(0, 0%, 95%);
   font-size: 16px;
   height: 100%;
 }
@@ -487,8 +487,8 @@ body {
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
-  background-color: hsl(0deg, 0%, 95%);
-  color: hsl(0deg, 0%, 18%);
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 18%);
   font-family: "Figtree", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-variant-ligatures: common-ligatures;
@@ -514,7 +514,7 @@ ul {
 
 a {
   align-items: center;
-  color: hsl(0deg, 0%, 18%);
+  color: hsl(0, 0%, 18%);
   display: inline-block;
   display: inline-flex;
   flex-direction: row;
@@ -539,7 +539,7 @@ svg {
 }
 
 figure {
-  border: 1px solid hsl(0deg, 0%, 86%);
+  border: 1px solid hsl(0, 0%, 86%);
   position: relative;
 }
 
@@ -656,17 +656,17 @@ strong {
   z-index: 3;
 }
 .portfolio__quicklessons {
-  background-color: hsl(186deg, 28%, 93%);
-  background-image: linear-gradient(160deg, hsl(186deg, 28%, 93%), #c8e6e9);
-  color: hsl(209deg, 53%, 16%);
+  background-color: hsl(186, 28%, 93%);
+  background-image: linear-gradient(160deg, hsl(186, 28%, 93%), #c8e6e9);
+  color: hsl(209, 53%, 16%);
 }
 .portfolio__quicklessons::before {
   background-image: url("../images/quicklessons__project-call.png");
 }
 .portfolio__start {
-  background-color: hsl(28deg, 100%, 95%);
-  background-image: linear-gradient(160deg, hsl(28deg, 100%, 95%), #ffdcbd);
-  color: hsl(25deg, 10%, 25%);
+  background-color: hsl(28, 100%, 95%);
+  background-image: linear-gradient(160deg, hsl(28, 100%, 95%), #ffdcbd);
+  color: hsl(25, 10%, 25%);
 }
 .portfolio__start::before {
   background-image: url("../images/start__project-call.png");
@@ -746,7 +746,7 @@ strong {
   opacity: 1;
 }
 .site__link--active::before {
-  background-color: hsl(180deg, 100%, 45%);
+  background-color: hsl(180, 100%, 45%);
   bottom: 0;
   content: "";
   left: 0;
@@ -763,7 +763,7 @@ strong {
   width: 100%;
 }
 .site__title {
-  color: hsl(0deg, 0%, 18%);
+  color: hsl(0, 0%, 18%);
   display: block;
   font-size: 1.75rem;
   font-weight: 800;
@@ -805,26 +805,26 @@ strong {
   background-color: #393c45;
 }
 .ql-color--gray::after {
-  background-color: hsl(0deg, 0%, 60%);
+  background-color: hsl(0, 0%, 60%);
 }
 .ql-color--gray--lighter::after {
-  background-color: hsl(0deg, 0%, 86%);
+  background-color: hsl(0, 0%, 86%);
 }
 
 .start-color--black::after {
-  background-color: hsla(30deg, 60%, 3%, 0.9);
+  background-color: hsla(30, 60%, 3%, 0.9);
 }
 .start-color--gray--dark::after {
   background-color: #454545;
 }
 .start-color--gray::after {
-  background-color: hsl(0deg, 0%, 60%);
+  background-color: hsl(0, 0%, 60%);
 }
 .start-color--gray--light::after {
   background-color: #d1d1d1;
 }
 .start-color--white::after {
-  background-color: hsl(0deg, 0%, 98%);
+  background-color: hsl(0, 0%, 98%);
 }
 .start-color--info::after {
   background-color: #279bd2;

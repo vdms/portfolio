@@ -1,10 +1,11 @@
 ---
-tags: notBaseNav
+tags: baseNav
 layout: "base.njk"
-title: Posts
+title: Blog
 eleventyNavigation:
-  key: Posts
+  key: Blog
   order: 2
+  url: /posts/
 ---
 
 <h1 class="page__title">{{title}}</h1>

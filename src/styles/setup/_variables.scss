@@ -29,12 +29,17 @@ $show-v-rhythm: true;
 // scss-lint:disable ZeroUnit
 // Considerando 16px como base
 $breakpoints: (
-    xs: 0,           // Extra small screen / phone
-    sm: 34rem, //544px  // Small screen / phone
-    md: 48rem, //768px  // Medium screen / tablet
-    lg: 62rem, //992px  // Large screen / desktop
-    xl: 75rem, //1200px // Extra large screen / wide desktop
-) !default;
+    xs: 0,
+    // Extra small screen / phone
+    sm: 34rem,
+    //544px  // Small screen / phone
+    md: 48rem,
+    //768px  // Medium screen / tablet
+    lg: 62rem,
+    //992px  // Large screen / desktop
+    xl: 75rem,
+    //1200px // Extra large screen / wide desktop
+    ) !default;
 // scss-lint:enable ZeroUnit
 
 
@@ -52,7 +57,8 @@ $border-radius: 4px;
 //------------------------------------
 //    #COLORS
 //------------------------------------
-$color--active: hsl(180, 100%, 45%);
+$color--active: hsl(180, 100%, 45%
+);
 $color--black: hsl(0, 0%, 2%);
 $color-gray--darkest: hsl(0, 0%, 18%);
 $color-gray--dark: hsl(0, 0%, 42%);
@@ -70,5 +76,5 @@ $body-text-color: $color-gray--darkest;
 
 $container-max-width: 50rem;
 
-$basic-font-family: 'Figtree', Helvetica, Arial, sans-serif;
+$basic-font-family: 'ArticulatCF', 'Figtree', Helvetica, Arial, sans-serif;
 $basic-font-weigth: 400;

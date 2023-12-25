@@ -2,6 +2,7 @@
 @import "setup/_fixed";
 @import "setup/_include-media";
 @import "setup/_mixins";
+@import "setup/_articulatcf";
 
 
 @import "block/_button";
@@ -19,6 +20,6 @@
 @import "layout/_portfolio"; // to be used in the projects thumbs
 @import "layout/_site";
 
-/* To be used in the projects page */ 
+/* To be used in the projects page */
 @import "projects/_quicklessons";
 @import "projects/_start";

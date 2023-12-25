@@ -189,6 +189,7 @@ input::-moz-focus-inner {
 
 @font-face {
   font-family: "ArticulatCF";
+  font-display: swap;
   font-style: normal;
   font-weight: 100;
   /* Thin */
@@ -196,6 +197,7 @@ input::-moz-focus-inner {
 }
 @font-face {
   font-family: "ArticulatCF";
+  font-display: swap;
   font-style: normal;
   font-weight: 200;
   /* ExtraLight */
@@ -203,6 +205,7 @@ input::-moz-focus-inner {
 }
 @font-face {
   font-family: "ArticulatCF";
+  font-display: swap;
   font-style: normal;
   font-weight: 300;
   /* Light */
@@ -210,6 +213,7 @@ input::-moz-focus-inner {
 }
 @font-face {
   font-family: "ArticulatCF";
+  font-display: swap;
   font-style: normal;
   font-weight: 400;
   /* Regular */
@@ -217,6 +221,7 @@ input::-moz-focus-inner {
 }
 @font-face {
   font-family: "ArticulatCF";
+  font-display: swap;
   font-style: normal;
   font-weight: 500;
   /* Medium */
@@ -224,6 +229,7 @@ input::-moz-focus-inner {
 }
 @font-face {
   font-family: "ArticulatCF";
+  font-display: swap;
   font-style: normal;
   font-weight: 600;
   /* Demi */
@@ -231,6 +237,7 @@ input::-moz-focus-inner {
 }
 @font-face {
   font-family: "ArticulatCF";
+  font-display: swap;
   font-style: normal;
   font-weight: 700;
   /* Bold */
@@ -238,6 +245,7 @@ input::-moz-focus-inner {
 }
 @font-face {
   font-family: "ArticulatCF";
+  font-display: swap;
   font-style: normal;
   font-weight: 800;
   /* ExtraBold */
@@ -245,6 +253,7 @@ input::-moz-focus-inner {
 }
 @font-face {
   font-family: "ArticulatCF";
+  font-display: swap;
   font-style: normal;
   font-weight: 900;
   /* Heavy */
@@ -252,6 +261,7 @@ input::-moz-focus-inner {
 }
 @font-face {
   font-family: "ArticulatCF";
+  font-display: swap;
   font-style: italic;
   font-weight: 100;
   /* Thin */
@@ -259,6 +269,7 @@ input::-moz-focus-inner {
 }
 @font-face {
   font-family: "ArticulatCF";
+  font-display: swap;
   font-style: italic;
   font-weight: 200;
   /* ExtraLight */
@@ -266,6 +277,7 @@ input::-moz-focus-inner {
 }
 @font-face {
   font-family: "ArticulatCF";
+  font-display: swap;
   font-style: italic;
   font-weight: 300;
   /* Light */
@@ -273,6 +285,7 @@ input::-moz-focus-inner {
 }
 @font-face {
   font-family: "ArticulatCF";
+  font-display: swap;
   font-style: italic;
   font-weight: 400;
   /* Regular */
@@ -280,6 +293,7 @@ input::-moz-focus-inner {
 }
 @font-face {
   font-family: "ArticulatCF";
+  font-display: swap;
   font-style: italic;
   font-weight: 500;
   /* Medium */
@@ -287,6 +301,7 @@ input::-moz-focus-inner {
 }
 @font-face {
   font-family: "ArticulatCF";
+  font-display: swap;
   font-style: italic;
   font-weight: 600;
   /* Demi */
@@ -294,6 +309,7 @@ input::-moz-focus-inner {
 }
 @font-face {
   font-family: "ArticulatCF";
+  font-display: swap;
   font-style: italic;
   font-weight: 700;
   /* Bold */
@@ -301,6 +317,7 @@ input::-moz-focus-inner {
 }
 @font-face {
   font-family: "ArticulatCF";
+  font-display: swap;
   font-style: italic;
   font-weight: 800;
   /* ExtraBold */
@@ -308,6 +325,7 @@ input::-moz-focus-inner {
 }
 @font-face {
   font-family: "ArticulatCF";
+  font-display: swap;
   font-style: italic;
   font-weight: 900;
   /* Heavy */
